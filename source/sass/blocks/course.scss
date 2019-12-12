@@ -1,0 +1,42 @@
+.course {
+  padding: 22px;
+  background-color: #f2f2f2;
+  list-style-type: none;
+  &:before {
+    content:"";
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50px;
+  }
+  p {
+    padding: 23px 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.course__title {
+  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-size: 24px;
+  margin-left:20px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  color: #111;
+  text-transform: uppercase;
+}
+.course__link {
+  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #111;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+

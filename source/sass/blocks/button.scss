@@ -1,0 +1,46 @@
+.button {
+  display:block;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  &--pick-course {
+    font-size: 13.5px;
+    line-height: 1.33;
+  }
+  &--green {
+    background-color: #68b738;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:active {
+    background-color: #5eaa2f;
+      span {
+        opacity: 0.3;
+      }
+    }
+  }
+  &--gray {
+    background-color: #f2f2f2;
+    color: #444;
+    &:hover {
+      background-color: #ebebeb;
+    }
+    &:active {
+      background-color: #ebebeb;
+      span {
+        opacity: 0.3;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.features-list__item {
+  &:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #68b738;
+  }
+}

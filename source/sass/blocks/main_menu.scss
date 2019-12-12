@@ -1,0 +1,36 @@
+.main-menu {
+    list-style-type: none;
+}
+
+.main-menu__item {
+  padding: 24px 0;
+  text-align: center;
+  border-top: 1px #e6e6e6;
+  background-color: #fff;
+}
+
+.main-menu__link {
+  font-family: Oswald-Medium, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 20px;
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:visited {
+    color: #111111;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+.product {
+  border: 1px solid #ededed;
+  padding: 25px 20px;
+}
+.product__title {
+  font-family: Oswald-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #111;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:visited {
+    color: #111;
+  }
+}
+.product__parameter {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #444;
+}
+
+

@@ -1,0 +1,30 @@
+.promo {
+  background-color: #68b738;
+}
+.promo__header {
+  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.promo__sub-header {
+  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-size: 13.5px;
+  line-height: 1;
+  font-weight: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  color: fff;
+  &:visited {
+    color: fff;
+  }
+}
