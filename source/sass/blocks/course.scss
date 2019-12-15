@@ -1,42 +1,39 @@
 .course {
   padding: 22px;
-  background-color: #f2f2f2;
+  background-color: $concrete;
   list-style-type: none;
+  //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
   &:before {
     content:"";
     position: relative;
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #68b738;
+    background-color: $green;
     border-radius: 50px;
   }
   p {
     padding: 23px 0;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $grey--darken;
   }
 }
 
 .course__title {
-  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;;
   font-size: 24px;
   margin-left:20px;
-  font-weight: normal;
-  font-stretch: normal;
+  font-weight: 400;
   line-height: 1.54;
-  color: #111;
+  color: $black;
   text-transform: uppercase;
 }
 .course__link {
-  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;;
   font-size: 16px;
   line-height: 1;
-  font-weight: normal;
-  font-stretch: normal;
-  color: #111;
+  font-weight: 400;
+  color: $black;
   margin-top: 20px;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-

@@ -1,46 +1,37 @@
 .button {
-  display:block;
+  display: block;
   padding-top: 14px;
   padding-bottom: 12px;
-  font-family: Oswald-Regular, Arial, sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   text-align: center;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  &--pick-course {
-    font-size: 13.5px;
+  background-color: $green;
+  cursor: pointer;
+  &--smaller {
+    font-size: 14px;
     line-height: 1.33;
   }
-  &--green {
-    background-color: #68b738;
-    &:hover {
-      background-color: #5eaa2f;
-    }
-    &:active {
-    background-color: #5eaa2f;
-      span {
-        opacity: 0.3;
-      }
-    }
+  &:hover {
+    background-color: $green--darken;
+  }
+  &:active {
+    background-color: $green--darken;
+    color: $whiteOp;
   }
   &--gray {
-    background-color: #f2f2f2;
-    color: #444;
+    background-color: $concrete;
+    color: $tundora;
     &:hover {
-      background-color: #ebebeb;
+      background-color: $concrete--darken;
     }
     &:active {
-      background-color: #ebebeb;
-      span {
-        opacity: 0.3;
-      }
+      background-color: $concrete--darken;
+      color: $tundoraOp;
     }
   }
 }

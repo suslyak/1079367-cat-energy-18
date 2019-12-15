@@ -1,3 +1,6 @@
+@import "_colors.scss";
+@import "common.scss";
+@import "_mixins.scss";
 @import "blocks/academy-logo.scss";
 @import "blocks/button.scss";
 @import "blocks/course.scss";
@@ -6,70 +9,7 @@
 @import "blocks/promo.scss";
 @import "blocks/product.scss";
 @import "blocks/show-more.scss";
-
-@font-face {
-  font-family: Oswald-Medium;
-  src: url(../fonts/oswaldmedium.woff2),
-    url(../fonts/oswaldmedium.woff);
-}
-
-@font-face {
-  font-family: Oswald-Regular;
-  src: url(../fonts/oswaldregular.woff),
-    url(../fonts/oswaldregular.woff);
-}
-
-// на будущее для сеток
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #444444;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-h1, h2 {
-  font-family: Oswald-Regular, Arial, sans-serif;;
-  font-size: 36px;
-  line-height: 1.67;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  color: #111;
-  margin-bottom: 35px;
-  text-transform: uppercase;
-}
-
-ul.products-list,
-ul.social-links {
-  list-style-type: none;
-}
-
-
-
+@import "blocks/social-links.scss";
+@import "blocks/title.scss";
+@import "blocks/visually-hidden.scss";
+@import "normalize.scss";

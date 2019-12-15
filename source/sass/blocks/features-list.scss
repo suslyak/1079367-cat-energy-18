@@ -1,4 +1,5 @@
 .features-list__item {
+  //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
   &:before {
     content: "";
     position: relative;
@@ -6,6 +7,6 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
-    background-color: #68b738;
+    background-color: $green;
   }
 }
