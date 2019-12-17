@@ -1,7 +1,7 @@
 .show-more {
   border: 1px solid $mercury-border;
   padding: 25px 20px;
-  @include clear_li;
+  @include clearLi;
   p {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;

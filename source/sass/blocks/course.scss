@@ -4,7 +4,7 @@
   list-style-type: none;
   //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
   &:before {
-    content:"";
+    content: "";
     position: relative;
     display: block;
     width: 50px;
@@ -19,16 +19,16 @@
 }
 
 .course__title {
-  font-family: "Oswald", "Arial", sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  margin-left:20px;
+  margin-left: 20px;
   font-weight: 400;
   line-height: 1.54;
   color: $black;
   text-transform: uppercase;
 }
 .course__link {
-  font-family: "Oswald", "Arial", sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
