@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
 <body>
   <header>
@@ -17,7 +20,7 @@
     </nav>
   </header>
   <main>
-    <h1>Каталог продукции</h1>
+    <h1 class="title">Каталог продукции</h1>
     <section class="catalog">
       <ul class="products-list">
         <li class="product">
@@ -37,7 +40,7 @@
               <td class="product__parameter">700 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -56,7 +59,7 @@
               <td class="product__parameter">1000 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -75,7 +78,7 @@
               <td class="product__parameter">700 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -94,7 +97,7 @@
               <td class="product__parameter">1000 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -113,7 +116,7 @@
               <td class="product__parameter">400 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make_requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -132,7 +135,7 @@
               <td class="product__parameter">700 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="product">
           <div class="product__picture"><a href="#"><img src="img/product-image.jpg" alt=""></a></div>
@@ -151,13 +154,12 @@
               <td class="product__parameter">500 Р.</td>
             </tr>
           </table>
-          <button class="button button--green button--make_requisition">Заказать</button>
+          <button class="button make-requisition">Заказать</button>
         </li>
         <li class="show-more">
-          <span class="show-more__plus">+</span>
           <p>Показать еще 100500 товаров</p>
-          <span>На самом деле вкусов гораздо больше!</span>
-          <button class="button button--gray button--show-all">Показать все</button>
+          <span class="show-more__subtext">На самом деле вкусов гораздо больше!</span>
+          <button class="button button--gray show-all">Показать все</button>
         </li>
       </ul>
     </section>

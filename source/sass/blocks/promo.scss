@@ -1,0 +1,31 @@
+.promo {
+  background-color: $green;
+}
+
+.promo__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.promo__sub-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  color: $white;
+
+  &:visited {
+    color: $white;
+  }
+}

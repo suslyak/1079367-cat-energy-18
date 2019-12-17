@@ -1,0 +1,27 @@
+.product {
+  border: 1px solid $mercury-border;
+  padding: 25px 20px;
+
+  @include clear-li;
+}
+
+.product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:visited {
+    color: $black;
+  }
+}
+
+.product__parameter {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $tundora;
+}
