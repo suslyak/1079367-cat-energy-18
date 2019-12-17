@@ -1,6 +1,6 @@
 .features-list__item {
   //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
-  &:before {
+  &::before {
     content: "";
     position: relative;
     display: block;

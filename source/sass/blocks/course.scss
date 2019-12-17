@@ -3,7 +3,7 @@
   background-color: $concrete;
   list-style-type: none;
   //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
-  &:before {
+  &::before {
     content: "";
     position: relative;
     display: block;
@@ -12,6 +12,7 @@
     background-color: $green;
     border-radius: 50px;
   }
+
   p {
     padding: 23px 0;
     border-bottom: 1px solid $grey--darken;
@@ -27,6 +28,7 @@
   color: $black;
   text-transform: uppercase;
 }
+
 .course__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;

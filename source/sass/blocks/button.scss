@@ -12,23 +12,29 @@
   border: none;
   background-color: $green;
   cursor: pointer;
+
   &--smaller {
     font-size: 14px;
     line-height: 1.33;
   }
+
   &:hover {
     background-color: $green--darken;
   }
+
   &:active {
     background-color: $green--darken;
     color: $whiteOp;
   }
+
   &--gray {
     background-color: $concrete;
     color: $tundora;
+
     &:hover {
       background-color: $concrete--darken;
     }
+
     &:active {
       background-color: $concrete--darken;
       color: $tundoraOp;

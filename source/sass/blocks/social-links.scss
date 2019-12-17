@@ -3,6 +3,7 @@
   border-top: 1px solid $grey--darken;
   border-bottom: 1px solid $grey--darken;
 }
+
 .social-links li {
-  @include clearLi;
+  @include clear-li;
 }

@@ -1,7 +1,9 @@
 .show-more {
   border: 1px solid $mercury-border;
   padding: 25px 20px;
-  @include clearLi;
+
+  @include clear-li;
+
   p {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -11,7 +13,8 @@
     color: $black;
     text-transform: uppercase;
   }
-  &:before {
+
+  &::before {
     content: url("../img/icon-plus-mobile.svg");
     width: 30px;
     height: 30px;
@@ -20,6 +23,7 @@
     opacity: 0.2;
   }
 }
+
 .show-more__subtext {
   font-size: 12px;
   font-weight: 400;
