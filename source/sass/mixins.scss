@@ -27,6 +27,8 @@
   margin: 0;
 }
 
+//grid-mixins
+
 @mixin make-column($gutter) {
   padding-left: $gutter;
   padding-right: $gutter;

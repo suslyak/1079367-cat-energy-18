@@ -1,0 +1,29 @@
+.logo {
+  background: url("../../img/logo-mobile.svg") no-repeat;
+  width: 191px;
+  height: 38px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    background: url("../../img/logo-tablet.svg") no-repeat;
+    width: 173px;
+    height: 58px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    background: url("../../img/logo-desktop.svg") no-repeat;
+    width: 202px;
+    height: 59px;
+    margin-left: 40px;
+  }
+}

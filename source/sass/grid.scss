@@ -1,0 +1,33 @@
+//общие свойства колонок, будет обязательный инициализирующий класс, закинем туда еще ширину мобильной колонки,
+//чтобы не делать ненужные мультиколонки для мобильной версии
+.column {
+  @include make-column(20px);
+  @include make-column-width($mobile-collon-width, 1);
+}
+//тут по идее медиа запросы должны тоже циклом формироваться по заданным в виде списка брейкпоинтам, но у нас будет
+//куцый фреймворк, в котором количество брейкпоинтов не настраивается
+//для мобильной версии мультиколонок не делаем, так как по макету в ней вообще всё всегда верстается в одну колонку и будет
+//работать только инициирующий класс column
+@media (min-width: $tablet-width) {
+  .column {
+    @include make-column(30px);
+  }
+
+  @for $i from 1 to $columns+1 {
+    .tablet-column-#{$i} {
+      @include make-column-width($tablet-collon-width, $i);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .column {
+    @include make-column(40px);
+  }
+
+  @for $i from 1 to $columns+1 {
+    .desktop-column-#{$i} {
+      @include make-column-width($desktop-collon-width, $i);
+    }
+  }
+}
