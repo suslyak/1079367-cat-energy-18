@@ -27,10 +27,77 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: "Arial", sans-serif; //В этом проекте вроде основной наборный шрифт и есть Ариал.
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   text-align: left;
   color: $tundora;
+  opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+  }
+}
+
+.page_header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+.courses {
+  margin-top: 198px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 530px;
+  }
+}
+
+.courses-list {
+  @include clear-ul;
+}
+
+.page_footer {
+  background-color: $concrete;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }

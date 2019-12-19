@@ -1,7 +1,11 @@
 @import "normalize.scss";
 @import "colors.scss";
-@import "common.scss";
+@import "grid_variables.scss";
 @import "mixins.scss";
+@import "grid.scss";
+@import "common.scss";
+@import "blocks/logo.scss";
+@import "blocks/sandwich.scss";
 @import "blocks/academy-logo.scss";
 @import "blocks/button.scss";
 @import "blocks/course.scss";
@@ -13,3 +17,5 @@
 @import "blocks/social-links.scss";
 @import "blocks/title.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/footer-logo.scss";
+@import "outlines.scss";

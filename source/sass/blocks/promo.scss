@@ -1,18 +1,46 @@
 .promo {
-  background-color: $green;
+  //background-color: $green;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background: $green--lighten url("../../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
+  min-height: 305px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    background: none;
+  }
 }
 
 .promo__header {
+  margin: 26px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
   text-align: center;
   color: $white;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    text-align: left;
+    color: $black;
+    margin-left: 90px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $white;
+  }
 }
 
 .promo__sub-header {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -20,6 +48,13 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    display: inline;
+    color: $black;
+    margin-left: 90px;
+  }
 }
 
 .promo__link {
@@ -28,4 +63,19 @@
   &:visited {
     color: $white;
   }
+}
+
+.promo__image {
+  position: absolute;
+  bottom: -132px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+.promo .wrapper {
+  position: relative;
 }

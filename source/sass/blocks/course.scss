@@ -1,7 +1,36 @@
 .course {
-  padding: 22px;
-  background-color: $concrete;
   list-style-type: none;
+
+  @include column-bottom-margins;
+
+  p {
+    padding: 9px 0;
+
+    @media (min-width: $tablet-width) {
+      width: 384px;
+    }
+  }
+
+  &__title {
+    @media (min-width: $tablet-width) {
+      width: 384px;
+    }
+  }
+
+  &__link {
+    @media (min-width: $tablet-width) {
+      width: 384px;
+    }
+  }
+}
+
+.course__container {
+  padding: 22px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $concrete;
   //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
   &::before {
     content: "";
@@ -9,24 +38,40 @@
     display: block;
     width: 50px;
     height: 50px;
+    margin-right: 20px;
     background-color: $green;
     border-radius: 50px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      top: 90px;
+      right: 60px;
+    }
   }
 
-  p {
-    padding: 23px 0;
-    border-bottom: 1px solid $grey--darken;
+  @media (min-width: $tablet-width) {
+    padding-top: 72px;
+    padding-left: 52px;
   }
 }
 
 .course__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   line-height: 1.54;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1.03;
+  }
 }
 
 .course__link {
@@ -35,7 +80,13 @@
   line-height: 1;
   font-weight: 400;
   color: $black;
-  margin-top: 20px;
+  padding-top: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid $grey--darken;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 30px;
+  }
 }
