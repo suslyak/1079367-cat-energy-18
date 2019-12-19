@@ -19,7 +19,7 @@
     font-size: 14px;
     line-height: 1.2;
     left: 20px;
-    width: $mobile-collon-width - $gutter;
+    width: $mobile-column-width - $gutter;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -34,7 +34,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: $desktop-collon-width - $gutter;
+      width: $desktop-column-width - $gutter;
     }
   }
 

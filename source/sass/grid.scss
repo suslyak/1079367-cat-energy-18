@@ -1,8 +1,9 @@
+// Я НЕ ЗНАЮ НУЖНО ЛИ ВСЕ ЭТО, ВОЗМОЖНО, Я СУМАСШЕДШИЙ.
 //общие свойства колонок, будет обязательный инициализирующий класс, закинем туда еще ширину мобильной колонки,
 //чтобы не делать ненужные мультиколонки для мобильной версии
 .column {
   @include make-column(20px);
-  @include make-column-width($mobile-collon-width, 1);
+  @include make-column-width($mobile-column-width, 1);
 }
 //тут по идее медиа запросы должны тоже циклом формироваться по заданным в виде списка брейкпоинтам, но у нас будет
 //куцый фреймворк, в котором количество брейкпоинтов не настраивается
@@ -15,7 +16,7 @@
 
   @for $i from 1 to $columns+1 {
     .tablet-column-#{$i} {
-      @include make-column-width($tablet-collon-width, $i);
+      @include make-column-width($tablet-column-width, $i);
     }
   }
 }
@@ -27,7 +28,54 @@
 
   @for $i from 1 to $columns+1 {
     .desktop-column-#{$i} {
-      @include make-column-width($desktop-collon-width, $i);
+      @include make-column-width($desktop-column-width, $i);
     }
+  }
+}
+
+.container-wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container-wrapper {
+    width: $tablet-width;
+  }
+
+  .logo {
+    background: url("../../img/logo-tablet.svg") no-repeat;
+    width: 173px;
+    height: 58px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .page_header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-wrapper {
+    width: $desktop-width;
+  }
+
+  .page_header {
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: $desktop-width;
+    padding-top: 31px;
+    z-index: 10;
+  }
+
+  .logo {
+    background: url("../../img/logo-desktop.svg") no-repeat;
+    width: 202px;
+    height: 60px;
   }
 }

@@ -27,8 +27,21 @@
   margin: 0;
 }
 
-//grid-mixins
+@mixin mouse-effects-opacity($hover-opacity,$press-opacity) {
+  &:hover {
+    opacity: $hover-opacity;
+  }
 
+  &:active {
+    opacity: $press-opacity;
+  }
+}
+
+//layout-mixins
+@mixin make-row {
+  display: flex;
+  flex-wrap: wrap;
+}
 @mixin make-column($gutter) {
   padding-left: $gutter;
   padding-right: $gutter;
@@ -55,3 +68,5 @@
     }
   }
 }
+
+

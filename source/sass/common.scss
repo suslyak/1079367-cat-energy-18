@@ -34,23 +34,11 @@ body {
   line-height: 1.29;
   text-align: left;
   color: $tundora;
-  opacity: 0.5;
+  //opacity: 0.5;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-  }
-}
-
-.wrapper {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: $tablet-width) {
-  .wrapper {
-    width: $tablet-width;
   }
 }
 
@@ -64,29 +52,19 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    z-index: 10;
-  }
 }
 
 .courses {
   margin-top: 198px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 530px;
+    margin-top: 530px; //временно
   }
 }
 
 .courses-list {
+  @include make-row;
+
   @include clear-ul;
 }
 
