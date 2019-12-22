@@ -1,0 +1,14 @@
+.courses {
+  @media (min-width: $tablet-width) {
+    margin-top: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
+}
+
+.courses__list {
+  @include make-row;
+  @include clear-ul;
+}

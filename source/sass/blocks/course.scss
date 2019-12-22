@@ -1,27 +1,12 @@
 .course {
-  list-style-type: none;
-
-  @include column-bottom-margins;
+  list-style: none;
 
   p {
     padding: 9px 0;
-
-    @media (min-width: $tablet-width) {
-      width: 384px;
-    }
   }
 
-  &__title {
-    @media (min-width: $tablet-width) {
-      width: 384px;
-    }
-  }
-
-  &__link {
-    @media (min-width: $tablet-width) {
-      width: 384px;
-    }
-  }
+  @include column(1,4,2);
+  @include column-bottom-margins;
 }
 
 .course__container {
@@ -69,6 +54,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 384px;
     font-size: 36px;
     line-height: 1.03;
   }
@@ -86,6 +72,7 @@
   border-top: 1px solid $grey--darken;
 
   @media (min-width: $tablet-width) {
+    width: 384px;
     font-size: 20px;
     padding-top: 30px;
   }

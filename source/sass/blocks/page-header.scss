@@ -1,0 +1,27 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    position: absolute;
+    z-index: 1;
+    padding-top: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &--big-relative {
+      position: relative;
+      margin-bottom: 48px;
+    }
+  }
+
+  @include column(1,4,4);
+}

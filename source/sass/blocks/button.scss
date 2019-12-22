@@ -14,27 +14,28 @@
   cursor: pointer;
 
   &--smaller {
-    position: absolute;
-    bottom: -343px;
+    position: relative;
     font-size: 14px;
     line-height: 1.2;
     left: 20px;
-    width: $mobile-column-width - $gutter;
+    width: 280px;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 1;
-      position: relative;
       width: 245px;
-      left: 120px;
-      bottom: 0;
-      margin-top: 45px;
+      position: relative;
+      z-index: 1;
+      margin-left: 98px;
+      margin-top: 47px;
       padding-top: 17px;
       padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 1;
+      order: 1;
     }
 
     @media (min-width: $desktop-width) {
-      width: $desktop-column-width - $gutter;
+      margin-top: 53px;
+      width: 245px;
     }
   }
 

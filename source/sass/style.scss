@@ -3,6 +3,8 @@
 @import "colors.scss";
 @import "mixins.scss";
 @import "common.scss";
+@import "blocks/container-wrapper.scss";
+@import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/academy-logo.scss";
 @import "blocks/button.scss";
@@ -10,11 +12,12 @@
 @import "blocks/features-list.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/promo.scss";
+@import "blocks/courses.scss";
 @import "blocks/product.scss";
 @import "blocks/show-more.scss";
 @import "blocks/social-links.scss";
 @import "blocks/title.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/footer-logo.scss";
-@import "outlines.scss";
-@import "grid.scss";
+@import "blocks/catalog.scss";

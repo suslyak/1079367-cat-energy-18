@@ -1,9 +1,13 @@
 .social-links {
-  padding: 25px 0;
+  list-style: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-top: 1px solid $grey--darken;
   border-bottom: 1px solid $grey--darken;
-}
 
-.social-links li {
-  @include clear-li;
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @include column(1,2,2);
 }
