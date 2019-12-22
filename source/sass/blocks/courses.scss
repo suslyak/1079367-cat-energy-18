@@ -1,4 +1,6 @@
 .courses {
+  @include wrapper;
+
   @media (min-width: $tablet-width) {
     margin-top: 180px;
   }
