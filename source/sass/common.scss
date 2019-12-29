@@ -40,9 +40,3 @@ body {
     line-height: 1.5;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .wrapper {
-    width: $desktop-width;
-  }
-}

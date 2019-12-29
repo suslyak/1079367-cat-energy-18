@@ -5,7 +5,7 @@
   align-items: center;
   background: url("../../img/index-background-mobile@1x.jpg") no-repeat 50% 0 $green--lighten;
   min-height: 305px;
-  border-bottom: 200px solid $white;
+  margin-bottom: 200px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;

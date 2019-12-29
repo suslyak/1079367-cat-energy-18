@@ -10,7 +10,7 @@
   @include mouse-effects-opacity(0.8,0.6);
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/logo-tablet.svg") no-repeat;
+    background-image: url("../../img/logo-tablet.svg");
     width: 173px;
     height: 58px;
     margin-top: 24px;
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/logo-desktop.svg") no-repeat;
+    background-image: url("../../img/logo-desktop.svg");
     width: 202px;
     height: 60px;
   }
