@@ -3,6 +3,8 @@
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -10,19 +12,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    position: absolute;
-    z-index: 1;
     padding-top: 32px;
-    flex-direction: row;
-    align-items: center;
+    margin-bottom: 48px;
     justify-content: space-between;
-
-    &--big-relative {
-      position: relative;
-      margin-bottom: 48px;
-    }
   }
 
+  @include wrapper;
   @include column(1,4,4);
 }

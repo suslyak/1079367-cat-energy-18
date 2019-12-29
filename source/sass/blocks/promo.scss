@@ -14,6 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -188px;
     background:
       url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0,
       linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
