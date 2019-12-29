@@ -1,7 +1,6 @@
 .button {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 12px;
+  padding: 14px 12px 12px 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -17,25 +16,24 @@
     position: relative;
     font-size: 14px;
     line-height: 1.2;
-    left: 20px;
-    width: 280px;
+    align-self: center;
+    padding-left: 73px;
+    padding-right: 73px;
 
     @media (min-width: $tablet-width) {
-      width: 245px;
       position: relative;
       z-index: 1;
-      margin-left: 98px;
+      margin-left: 120px;
+      align-self: flex-start;
       margin-top: 47px;
-      padding-top: 17px;
-      padding-bottom: 15px;
       font-size: 20px;
       line-height: 1;
       order: 1;
+      padding: 17px 26px 15px 26px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 53px;
-      width: 245px;
     }
   }
 

@@ -2,7 +2,16 @@
   list-style: none;
 
   p {
-    padding: 9px 0;
+    padding: 9px 0 5px 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 1px;
+      margin-top: 22px;
+      border-top: 1px solid $grey--darken;
+    }
   }
 
   @include column(1,4,2);
@@ -66,13 +75,10 @@
   line-height: 1;
   font-weight: 400;
   color: $black;
-  padding-top: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  border-top: 1px solid $grey--darken;
 
   @media (min-width: $tablet-width) {
-    width: 384px;
     font-size: 20px;
     padding-top: 30px;
   }
