@@ -27,10 +27,16 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif; //В этом проекте вроде основной наборный шрифт и есть Ариал.
+  min-width: 320px;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   text-align: left;
   color: $tundora;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

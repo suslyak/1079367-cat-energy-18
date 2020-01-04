@@ -1,4 +1,15 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include clear-ul;
+}
+
 .features-list__item {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  min-height: 60px;
   //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
   &::before {
     content: "";
@@ -8,5 +19,17 @@
     height: 60px;
     margin-right: 20px;
     background-color: $green;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
+
+  p {
+    padding-top: 5px;
+    margin-left: 80px;
+  }
+
+  @include column(1,2,1);
 }

@@ -1,8 +1,30 @@
 .product {
-  border: 1px solid $mercury-border;
-  padding: 25px 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid $mercury-border;
+  border-right: 1px solid $mercury-border;
+  border-left: 1px solid $mercury-border;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @include clear-li;
+  &:last-child {
+    border-bottom: 1px solid $mercury-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @include column(1,2,1);
+}
+
+.product__container {
+  @media (min-width: $tablet-width) {
+    background-color: $concrete;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .product__title {

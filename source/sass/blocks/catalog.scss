@@ -1,0 +1,11 @@
+.catalog {
+  @include wrapper;
+}
+
+.catalog__products-list {
+  @include clear-ul;
+
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
