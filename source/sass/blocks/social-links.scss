@@ -4,10 +4,20 @@
   padding-bottom: 25px;
   border-top: 1px solid $grey--darken;
   border-bottom: 1px solid $grey--darken;
+  width: 100%;
+
+  @include gutters(6.25%);
 
   @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(3.9%);
     border: none;
   }
 
-  @include column(1,2,2);
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(3%);
+  }
 }

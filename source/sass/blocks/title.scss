@@ -5,15 +5,22 @@
   font-weight: 400;
   color: $black;
   margin: 17px 0;
+  width: 100%;
+
+  @include gutters(6.25%);
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
+
+    @include gutters(3.9%);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include gutters(3%);
   }
 
   &--narrow-margins {
     margin: 14px 0;
   }
-
-  @include column(1,4,4);
 }

@@ -4,22 +4,34 @@
   border-top: 1px solid $mercury-border;
   border-right: 1px solid $mercury-border;
   border-left: 1px solid $mercury-border;
-  width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
+
+  @include gutters(6.25%);
 
   &:last-child {
     border-bottom: 1px solid $mercury-border;
   }
 
   @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(3.9%);
     border: none;
   }
 
-  @include column(1,2,1);
+  @media (min-width: $tablet-width) {
+    width: 25%;
+
+    @include gutters(3%);
+  }
 }
 
 .product__container {
+  display: flex;
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
     background-color: $concrete;
     padding-left: 40px;

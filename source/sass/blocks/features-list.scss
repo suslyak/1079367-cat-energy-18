@@ -1,6 +1,7 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
+
   @include clear-ul;
   padding-top: 12px;
 
@@ -15,6 +16,9 @@
   display: flex;
   position: relative;
   min-height: 60px;
+  width: 100%;
+
+  @include gutters(6.25%);
 
   @media (max-width: 767px) {
     &:not(:last-child) {
@@ -68,6 +72,8 @@
   }
 
   p {
+    position: relative;
+    z-index: 1;
     margin: 0;
     padding: 0;
   }
@@ -76,6 +82,9 @@
     min-height: 228px;
     flex-direction: column;
     margin-bottom: 89px;
+    width: 50%;
+
+    @include gutters(3.9%);
 
     p {
       width: 76%;
@@ -83,36 +92,30 @@
 
     &::after {
       counter-increment: featuresCounter;
-      content:counter(featuresCounter);
+      content: counter(featuresCounter);
       position: absolute;
+      z-index: 0;
       top: -18%;
       left: 38%;
       color: $concrete;
       font-size: 281px;
       line-height: 1;
-      font-family: Oswald;
+      font-family: "Oswald", "Arial", sans-serif;
       font-weight: normal;
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 25%;
+
+    @include gutters(3%);
+
     p {
       width: 100%;
     }
 
     &::after {
-      counter-increment: featuresCounter;
-      content:counter(featuresCounter);
-      position: absolute;
-      top: -18%;
       left: 48%;
-      color: $concrete;
-      font-size: 281px;
-      line-height: 1;
-      font-family: Oswald;
-      font-weight: normal;
     }
   }
-
-  @include column(1,2,1);
 }

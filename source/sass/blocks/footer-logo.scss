@@ -1,9 +1,22 @@
 .footer-logo {
   background: url("../../img/logo-footer.svg") no-repeat 50% 0 transparent;
   background-origin: content-box;
-  width: 128px;
   height: 24px;
+  width: 100%;
+
+  @include gutters(6.25%);
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(3.9%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(3%);
+  }
 
   @include mouse-effects-opacity(0.8,0.6);
-  @include column(1,1,1);
 }
