@@ -4,13 +4,98 @@
   p {
     padding: 9px 0 5px 0;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 240px;
-      height: 1px;
-      margin-top: 22px;
-      border-top: 1px solid $grey--darken;
+    @media (max-width: 767px) {
+      &::after {
+        content: "";
+        display: block;
+        width: 240px;
+        height: 1px;
+        margin-top: 22px;
+        border-top: 1px solid $grey--darken;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 59%;
+      order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 99%;
+      order: 3;
+      padding: 30px 0 15px 0;
+    }
+  }
+
+  &--slim-cat .course__container {
+    &::before {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      background-image: url("../../img/icon-cat-slim.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 200px;
+        height: 194px;
+        margin-right: 0;
+        margin-top: -33px;
+        background-size: 140px 194px;
+        margin-bottom: 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 64px;
+        margin-bottom: 0;
+        background-size: 70px 97px;
+      }
+    }
+  }
+
+  &--power-cat .course__container {
+    &::before {
+      width: 65px;
+      height: 50px;
+      left: -8px;
+      margin-right: 5px;
+      background-position-y: 14px;
+      background-image: url("../../img/icon-cat-pro.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 194px;
+        left: 0;
+        margin-right: 0;
+        margin-top: -33px;
+        background-size: 268px 112px;
+        margin-bottom: 16px;
+        background-position-y: 50px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 28px;
+        margin-bottom: 0;
+        left: -4%;
+        background-size: 134px 56px;
+        background-position-y: 29px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      p {
+        width: 54%;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      p {
+        width: 99%;
+      }
     }
   }
 
@@ -25,30 +110,65 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: $concrete;
-  //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
-  &::before {
+  &::after {
     content: "";
-    position: relative;
-    display: block;
+    position: absolute;
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    top: 24px;
+    z-index: 0;
     background-color: $green;
     border-radius: 50px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
       width: 200px;
       height: 200px;
       border-radius: 200px;
-      top: 90px;
-      right: 60px;
+      top: 96px;
+      right: 62px;
+      //background:
+      //url("../../img/icon-cat-slim.svg") 50% 0px / 140px no-repeat padding-box padding-box,
+      //radial-gradient(ellipse at center, $green 0, $green 100px, transparent 100px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      border-radius: 200px;
+      top: 47px;
+      left: 52px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    z-index: 1;
+    background-position: 50% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+      order: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      order: 1;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 72px;
+    padding-top: 80px;
     padding-left: 52px;
+    padding-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -63,9 +183,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 384px;
+    width: 59%;
     font-size: 36px;
     line-height: 1.03;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 59%;
+    align-self: center;
+    order: 2;
   }
 }
 
@@ -80,6 +207,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-top: 30px;
+    order: 4;
   }
 }

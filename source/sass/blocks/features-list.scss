@@ -1,16 +1,27 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
-
   @include clear-ul;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  counter-reset: featuresCounter;
 }
 
 .features-list__item {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
   min-height: 60px;
-  //это типа заглушка, если нет иконки, графики как бы ещё нет в этом задании.
+
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
   &::before {
     content: "";
     position: relative;
@@ -18,17 +29,89 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
+    flex-shrink: 0;
     background-color: $green;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+
+  &--leaf {
+    &::before {
+      background-image: url("../../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--meal {
+    &::before {
+      background-image: url("../../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--alarmclock {
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
     }
   }
 
   p {
-    padding-top: 5px;
-    margin-left: 80px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 228px;
+    flex-direction: column;
+    margin-bottom: 89px;
+
+    p {
+      width: 76%;
+    }
+
+    &::after {
+      counter-increment: featuresCounter;
+      content:counter(featuresCounter);
+      position: absolute;
+      top: -18%;
+      left: 38%;
+      color: $concrete;
+      font-size: 281px;
+      line-height: 1;
+      font-family: Oswald;
+      font-weight: normal;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    p {
+      width: 100%;
+    }
+
+    &::after {
+      counter-increment: featuresCounter;
+      content:counter(featuresCounter);
+      position: absolute;
+      top: -18%;
+      left: 48%;
+      color: $concrete;
+      font-size: 281px;
+      line-height: 1;
+      font-family: Oswald;
+      font-weight: normal;
+    }
   }
 
   @include column(1,2,1);
