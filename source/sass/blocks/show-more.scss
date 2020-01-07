@@ -1,6 +1,7 @@
 .show-more {
   border: 1px solid $mercury-border;
-  padding: 25px 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   width: 100%;
 
   @include gutters(6.25%);
@@ -13,24 +14,34 @@
     text-align: center;
     color: $black;
     text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 60%;
+      font-size: 20px;
+      line-height: 1;
+      margin-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 
-  &::before {
-    content: url("../img/icon-plus-mobile.svg");
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-bottom: 26px;
-    opacity: 0.2;
+  button {
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    border: none;
 
     @include gutters(3.9%);
-    border: none;
-    padding-left: 40px;
-    padding-right: 40px;
+
+    button {
+      margin-top: 65px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -40,10 +51,54 @@
   }
 }
 
+.show-more__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: url("../img/icon-plus-mobile.svg");
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 9px;
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    border: 1px solid $mercury-border;
+
+    @include gutters(37px);
+
+    &::before {
+      content: url("../img/icon-plus.svg");
+      width: 60px;
+      height: 60px;
+      margin-bottom: 9px;
+    }
+  }
+}
+
 .show-more__subtext {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
   text-align: center;
   color: $tundora;
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

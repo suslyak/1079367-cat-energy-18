@@ -15,7 +15,7 @@
     border: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 50%;
 
     @include gutters(3%);

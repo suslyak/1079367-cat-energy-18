@@ -4,8 +4,16 @@
 
   @include gutters(6.25%);
 
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     @include gutters(3.9%);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -111,8 +119,6 @@
       }
     }
   }
-
-  @include column-bottom-margins;
 }
 
 .course__container {

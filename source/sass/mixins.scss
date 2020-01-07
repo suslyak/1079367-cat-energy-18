@@ -34,21 +34,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-@mixin column-bottom-margins {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-}

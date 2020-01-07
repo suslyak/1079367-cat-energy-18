@@ -1,5 +1,9 @@
 .catalog {
   @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .catalog__products-list {
@@ -8,4 +12,8 @@
   margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 142px;
+  }
 }
