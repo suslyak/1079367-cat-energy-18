@@ -1,8 +1,25 @@
 .catalog {
   @include wrapper;
 
+  @media (max-width: $max-mobile-width) {
+    h1 {
+      @include gutters(20px);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+    margin-bottom: 70px;
+
+    @include gutters(30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    padding-top: 20px;
+
+
+    @include gutters(40px);
   }
 }
 
@@ -14,6 +31,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-top: 142px;
+    margin-top: 165px;
   }
 }

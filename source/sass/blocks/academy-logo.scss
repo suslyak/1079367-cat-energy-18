@@ -4,17 +4,17 @@
   color: $tundora;
   width: 100%;
 
-  @include gutters(6.25%);
+  @include gutters(25px);
 
   @media (min-width: $tablet-width) {
     width: 25%;
 
-    @include gutters(3.9%);
+    @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
     width: 25%;
 
-    @include gutters(3%);
+    @include gutters(40px);
   }
 }

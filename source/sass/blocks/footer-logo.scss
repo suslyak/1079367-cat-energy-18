@@ -2,20 +2,16 @@
   background: url("../../img/logo-footer.svg") no-repeat 50% 0 transparent;
   background-origin: content-box;
   height: 24px;
-  width: 100%;
+  width: 172px;
 
-  @include gutters(6.25%);
+  @include gutters(20px);
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-
-    @include gutters(3.9%);
+    @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
-
-    @include gutters(3%);
+    @include gutters(40px);
   }
 
   @include mouse-effects-opacity(0.8,0.6);

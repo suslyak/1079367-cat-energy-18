@@ -3,10 +3,10 @@
   flex-wrap: wrap;
 
   @include clear-ul;
-  padding-top: 12px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 60px;
   }
 
   counter-reset: featuresCounter;
@@ -16,9 +16,6 @@
   display: flex;
   position: relative;
   min-height: 60px;
-  width: 100%;
-
-  @include gutters(6.25%);
 
   @media (max-width: 767px) {
     &:not(:last-child) {
@@ -82,9 +79,11 @@
     min-height: 228px;
     flex-direction: column;
     margin-bottom: 89px;
-    width: 50%;
+    width: calc((100% - 60px) / 2);
 
-    @include gutters(3.9%);
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
 
     p {
       width: 76%;
@@ -96,9 +95,9 @@
       position: absolute;
       z-index: 0;
       top: -18%;
-      left: 38%;
+      left: 35.5%;
       color: $concrete;
-      font-size: 281px;
+      font-size: 282px;
       line-height: 1;
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: normal;
@@ -106,16 +105,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: calc((100% - 240px) / 4);
 
-    @include gutters(3%);
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
+
+    margin: 0 80px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     p {
-      width: 100%;
+      width: 90%;
     }
 
     &::after {
-      left: 48%;
+      left: 46%;
     }
   }
 }

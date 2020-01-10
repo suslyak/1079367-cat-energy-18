@@ -6,21 +6,21 @@
   z-index: 1;
   width: 100%;
 
-  @include gutters(6.25%);
-
   @media (min-width: $tablet-width) {
+
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
-    @include gutters(3.9%);
+    @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 32px;
     margin-bottom: 15px;
-    justify-content: space-between;
+    width: 90%;
 
-    @include gutters(3%);
+    @include gutters(40px);
   }
 
   @include wrapper;

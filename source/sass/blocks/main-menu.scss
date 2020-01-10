@@ -1,17 +1,19 @@
 .main-menu {
   ul {
     @include clear-ul;
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      margin-left: 95px;
+      margin-left: 20px;
     }
   }
 }
 
 .main-menu__item {
-  padding: 21px;
+  padding: 21px 6.25%;
   text-align: center;
   border-top: 1px solid $mercury;
   background-color: $white;

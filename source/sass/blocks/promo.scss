@@ -15,9 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -188px;
+    margin-top: -155px;
     min-height: 696px;
-    margin-bottom: 80px;
+    margin-bottom: 84px;
     background:
       url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0,
       linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
@@ -33,7 +33,7 @@
   margin-bottom: -175px;
 
   @media (max-width: $max-mobile-width) {
-    @include gutters(6.25%);
+    @include gutters(20px);
   }
 
 
@@ -68,12 +68,10 @@
   color: $white;
   width: 100%;
 
-  @include gutters(6.25%);
-
   @media (min-width: $tablet-width) {
     width: 77%;
 
-    @include gutters(3.9%);
+    @include gutters(30px);
     font-size: 60px;
     text-align: left;
     color: $black;
@@ -83,8 +81,8 @@
   @media (min-width: $desktop-width) {
     width: 45%;
 
-    @include gutters(3%);
-    margin-left: 10.1%;
+    @include gutters(40px);
+    margin-left: 10.3%;
   }
 }
 
@@ -101,12 +99,12 @@
   text-transform: uppercase;
   width: 100%;
 
-  @include gutters(6.25%);
+  @include gutters(20px);
 
   @media (min-width: $tablet-width) {
     width: 77%;
 
-    @include gutters(3.9%);
+    @include gutters(30px);
     font-size: 20px;
     text-align: left;
     color: $black;
@@ -117,8 +115,8 @@
   @media (min-width: $desktop-width) {
     width: 45%;
 
-    @include gutters(3%);
-    margin-left: 10.1%;
+    @include gutters(40px);
+    margin-left: 10.3%;
   }
 }
 
