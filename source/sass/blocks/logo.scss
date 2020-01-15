@@ -7,6 +7,13 @@
   display: block;
   cursor: pointer;
 
+  @media (max-width: $max-mobile-width) {
+    position: relative;
+    left: -45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mouse-effects-opacity(0.8,0.6);
 
   @media (min-width: $tablet-width) {

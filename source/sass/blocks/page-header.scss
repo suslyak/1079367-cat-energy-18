@@ -4,18 +4,24 @@
   position: relative;
   flex-wrap: wrap;
   z-index: 1;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 32px;
-    margin-bottom: 48px;
-    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 90%;
+
+    @include gutters(40px);
   }
 
   @include wrapper;
-  @include column(1,4,4);
 }

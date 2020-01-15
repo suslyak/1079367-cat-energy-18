@@ -1,12 +1,20 @@
 .courses {
   @include wrapper;
+  margin-bottom: 18px;
+
+  @include gutters(20px);
 
   @media (min-width: $tablet-width) {
-    margin-top: 180px;
+    margin-bottom: 10px;
+
+    @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
+    width: 90%;
+    margin-bottom: 70px;
+
+    @include gutters(40px);
   }
 }
 

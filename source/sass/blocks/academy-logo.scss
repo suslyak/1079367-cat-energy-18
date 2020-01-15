@@ -2,6 +2,19 @@
   font-size: 16px;
   line-height: 1;
   color: $tundora;
+  width: 100%;
 
-  @include column(1,1,1);
+  @include gutters(25px);
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+
+    @include gutters(30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+
+    @include gutters(40px);
+  }
 }

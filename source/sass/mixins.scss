@@ -21,62 +21,16 @@
 
 //layout-mixins
 @mixin wrapper() {
-  width: $mobile-column-width;
   margin-left: auto;
   margin-right: auto;
+}
 
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+@mixin gutters($gutter) {
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 @mixin make-row {
   display: flex;
   flex-wrap: wrap;
-}
-
-@mixin make-column-gutters($gutter) {
-  padding-left: $gutter;
-  padding-right: $gutter;
-}
-
-@mixin make-column-width($column-width: $mobile-column-width, $columns: 1) {
-  width: $column-width * $columns;
-}
-
-@mixin column-bottom-margins {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-@mixin column($mobile: 1,$tablet: 1,$desktop: 1) {
-  @include make-column-width($mobile-column-width, $mobile);
-  @include make-column-gutters(20px);
-
-  @media (min-width: $tablet-width) {
-    @include make-column-width($tablet-column-width, $tablet);
-    @include make-column-gutters(30px);
-  }
-
-  @media (min-width: $desktop-width) {
-    @include make-column-width($desktop-column-width, $desktop);
-    @include make-column-gutters(40px);
-  }
 }

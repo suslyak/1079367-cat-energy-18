@@ -1,5 +1,26 @@
 .catalog {
   @include wrapper;
+
+  @media (max-width: $max-mobile-width) {
+    h1 {
+      @include gutters(20px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    margin-bottom: 70px;
+
+    @include gutters(30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    padding-top: 20px;
+
+
+    @include gutters(40px);
+  }
 }
 
 .catalog__products-list {
@@ -8,4 +29,8 @@
   margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 165px;
+  }
 }

@@ -4,10 +4,18 @@
   padding-bottom: 25px;
   border-top: 1px solid $grey--darken;
   border-bottom: 1px solid $grey--darken;
+  width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
+    width: 50%;
+
+    @include gutters(30px);
     border: none;
   }
 
-  @include column(1,2,2);
+  @media (min-width: $desktop-width) {
+    width: 50%;
+
+    @include gutters(40px);
+  }
 }

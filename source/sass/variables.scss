@@ -1,8 +1,7 @@
 // Layout variables
 $tablet-width: 768px;
-$desktop-width: 1300px;
+$desktop-width: 1440px;
 $gutter: 40px;
 $columns: 4;
-$mobile-column-width: 320px;
-$tablet-column-width: 192px;
-$desktop-column-width: 325px;
+$max-mobile-width: 767px;
+$mobile-column-width: 100%;
