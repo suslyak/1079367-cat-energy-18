@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
@@ -20,9 +21,71 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Подбор программы питания в магазине «Кэт Энерджи»</h1>
+    <h1 class="title">Подбор программы</h1>
+    <section class="custom-course">
+      <form action="https://echo.htmlacademy.ru" class="custom-course__form">
+        <p class="custom-course__form-info">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset class="custom-course__personal">
+          <label for="name">Имя*:</label>
+          <input id="name" type="text" name="name" placeholder="барсик" required>
+
+          <label for="weight">Вес (кг):*</label>
+          <input id="weight" type="number" name="weight" placeholder="7" required>
+
+          <label for="age">Возраст (лет):</label>
+          <input id="age" type="number" name="age" placeholder="7">
+        </fieldset>
+        <fieldset class="custom-course__effect">
+          <label for="losing-weight">Похудение</label>
+          <input id="losing-weight" type="radio" name="effect" value="losing-weight"  checked>
+
+          <label for="gain-weight">Набор массы</label>
+          <input id="gain-weight" type="radio" name="effect" value="gain-weight">
+
+          <label for="require-assistance">Не знаю (Нужен ваш совет)</label>
+          <input id="require-assistance" type="radio" name="effect" value="require-assistance">
+        </fieldset>
+        <fieldset class="custom-course__contacts">
+          <legend>Контактные данные (владельца кота)</legend>
+          <label for="email">email*:</label>
+          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+
+          <label for="phone">Телефон:*</label>
+          <input id="phone" type="tel" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone"  placeholder="8 (960) 900-60-90" required>
+        </fieldset>
+        <fieldset class="custom-course__comment">
+          <legend>Комментарий</legend>
+          <label  class="visually-hidden" for="comment">Вы можете добавть комментарий</label>
+          <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="custom-course__up-sell">
+          <legend>Дополнительно</legend>
+          <label for="sweetener">Сахарозаменитель</label>
+          <input id="sweetener" name="up-sell" type="checkbox" value="sweetener" checked>
+
+          <label for="milk">Молоко</label>
+          <input id="milk" name="up-sell" value="milk" type="checkbox">
+
+          <label for="water">Питьевая вода</label>
+          <input id="water" name="up-sell" value="water" type="checkbox">
+
+          <label for="vitamins">Витамины</label>
+          <input id="vitamins" name="up-sell" value="vitamins" type="checkbox">
+        </fieldset>
+        <button class="button">Отправить заявку</button>
+        <small>* — Обязательные поля</small>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
+    <h2 class="visually-hidden">
+      Как нас найти
+    </h2>
+    <h3>Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
+    <p>
+      ул. Большая <br>Конюшенная,д. 19/8 <br>Санкт-Петербург
+    </p>
+    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
     <div class="page-footer__container">
       <a href="index.html" class="footer-logo" aria-label="Лого «Кэт Энерджи»"></a>
       <ul class="social-links">
