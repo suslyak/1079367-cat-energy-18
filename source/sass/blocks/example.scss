@@ -1,0 +1,40 @@
+.example {
+  display: flex;
+  flex-direction: column;
+  background-color: $concrete;
+  padding-top: 5px;
+
+  @include gutters(20px);
+
+  p {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    letter-spacing: 0.07px;
+  } flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+
+
+}
+
+.example__info {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
+}
+
+.example__slider {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+  }
+}

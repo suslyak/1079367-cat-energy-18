@@ -12,4 +12,4 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
-source/sass/outlines.css
+source/sass/outlines.scss
