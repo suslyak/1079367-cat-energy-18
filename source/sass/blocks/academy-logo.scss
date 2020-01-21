@@ -2,12 +2,14 @@
   font-size: 16px;
   line-height: 1;
   color: $tundora;
-  width: 100%;
-
-  @include gutters(25px);
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 25%;
+    justify-content: flex-end;
 
     @include gutters(30px);
   }
@@ -16,5 +18,29 @@
     width: 25%;
 
     @include gutters(40px);
+  }
+}
+
+.academy-logo__text {
+  @include mouse-effects-opacity(1, 0.3);
+
+  color: $tundora;
+  text-decoration: none;
+}
+
+.academy-logo__picture {
+  margin-left: 20px;
+
+  &:hover {
+    path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    path {
+      fill: $green;
+    }
   }
 }
