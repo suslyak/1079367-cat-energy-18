@@ -4,7 +4,9 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
+    padding-bottom: 55px;
+    margin-bottom: 0;
+    border-bottom: 1px solid mercury;
 
     @include gutters(30px);
   }

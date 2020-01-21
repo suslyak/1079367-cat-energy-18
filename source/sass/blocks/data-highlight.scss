@@ -1,18 +1,22 @@
 .data-highlight {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    justify-content: flex-start;
+  }
 }
 
 .data-highlight__data {
   width: 124px;
   position: relative;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid $grey--border;
-  border-radius: 2px;
 
   &:not(:last-of-type) {
     margin-right: 32px;
@@ -20,16 +24,20 @@
 
   @media (min-width: $tablet-width) {
     width: 164px;
+
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
   }
 }
 
 .data-highlight__subject {
-  width: 100%;
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: -1.3em;
-  display: flex;
-  justify-content: center;
+  top: -0.5em;
+  align-self: center;
+  padding: 0px 15px;
+  background-color: $concrete;
   font-size: 12px;
   text-align: center;
   font-family: "Arial", sans-serif;
@@ -38,35 +46,38 @@
   line-height: 1;
   order: 2;
 
-  span {
-    padding: 0px 15px;
-    background-color: $concrete;
-  }
-
   @media (min-width: $tablet-width) {
-    bottom: -0.5em;
-    span {
-      padding: 0px 8px;
-    }
+    padding: 0px 8px;
+    font-size: 14px;
+    line-height: 1;
+    background-color: $white;
 
     br {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $concrete;
+  }
 }
 
 .data-highlight__value {
+  width: 124px;
+  padding: 15px;
+  border: 1px solid $grey--border;
+  border-radius: 3px;
   font-size: 24px;
   font-weight: normal;
   line-height: 1;
+  word-wrap: break-word;
   font-family: "Oswald", "Arial", sans-serif;
   order: 1;
-}
 
-.data-highlight__outlay {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    padding: 17px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }

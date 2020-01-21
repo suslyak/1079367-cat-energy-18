@@ -78,8 +78,12 @@
   @media (min-width: $tablet-width) {
     min-height: 228px;
     flex-direction: column;
-    margin-bottom: 89px;
+    margin-top: 89px;
     width: calc((100% - 60px) / 2);
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
 
     &:nth-child(odd) {
       margin-right: 60px;
