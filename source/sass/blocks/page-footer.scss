@@ -1,6 +1,7 @@
 .page-footer {
   background-color: $concrete;
   margin-top: auto;
+  position: relative;
 }
 
 .page-footer__container {
@@ -32,6 +33,14 @@
     padding: 66px 71px 53px;
   }
 
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 570px;
+    top: 93px;
+    left: 110px;
+    padding: 66px 95px 53px 75px;
+  }
+
   h3 {
     margin: 0;
     font-family: "Oswald", "Arial", sans-serif;
@@ -54,11 +63,14 @@
       font-size: 16px;
       text-align: right;
       line-height: 2.3;
-      letter-spacing: 0.1;
 
       &::first-line {
         line-height: 0.7;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
     }
   }
 }

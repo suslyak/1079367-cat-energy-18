@@ -13,7 +13,8 @@
 
   @media (min-width: $desktop-width) {
     width: 90%;
-    margin-bottom: 85px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
     @include gutters(40px);
   }

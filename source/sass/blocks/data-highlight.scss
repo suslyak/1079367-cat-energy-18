@@ -8,6 +8,11 @@
     width: 60%;
     justify-content: flex-start;
   }
+
+   @media (min-width: $desktop-width) {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .data-highlight__data {
