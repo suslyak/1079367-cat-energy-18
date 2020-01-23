@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 5px;
-  background-color:  $concrete;
+  background-color: $concrete;
 
   p {
     padding-top: 8px;
@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top:25px;
-    background-color:  $white;
+    margin-top: 25px;
+    background-color: $white;
 
     p {
       margin-top: 45px;
@@ -38,6 +38,7 @@
     h2 {
       margin-top: 57px;
     }
+
     p {
       margin-top: 124px;
       margin-bottom: 57px;
@@ -88,7 +89,7 @@
 
   @media (min-width: $desktop-width) {
     width: 690px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: auto;
 
     background:
@@ -118,15 +119,13 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-left: 0;
-    background:
-      linear-gradient(to bottom, $white 0, $white 170px, $concrete 170px);
+    background: linear-gradient(to bottom, $white 0, $white 170px, $concrete 170px);
   }
 
   @media (min-width: $desktop-width) {
     width: 363px;
     left: 42px;
-    background:
-      linear-gradient(to bottom, $white 0, $white 192px, $concrete 192px);
+    background: linear-gradient(to bottom, $white 0, $white 192px, $concrete 192px);
   }
 }
 
@@ -140,16 +139,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    background:
-      linear-gradient(to bottom, $white 0, $white 170px, $concrete-gallery 171px);
+    background: linear-gradient(to bottom, $white 0, $white 170px, $concrete-gallery 171px);
   }
 
   @media (min-width: $desktop-width) {
     left: 42px;
-    background:
-      linear-gradient(to bottom, $white 0, $white 192px, $concrete-gallery 192px);
+    background: linear-gradient(to bottom, $white 0, $white 192px, $concrete-gallery 192px);
   }
-
 }
 
 .example__outlay {
@@ -243,7 +239,7 @@
         border-bottom: 1px solid $white;
       }
 
-       @media (min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         border-bottom: 1px solid $concrete;
       }
     }
@@ -286,14 +282,13 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
-   &:hover {
+    &:hover {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
-   }
+    }
 
-   &:active {
+    &:active {
       border: 2px solid $green;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-   }
-
+    }
   }
 }

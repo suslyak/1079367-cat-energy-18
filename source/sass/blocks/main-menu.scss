@@ -1,7 +1,7 @@
 .main-menu {
   ul {
     @include clear-ul;
-    display: flex;
+    display: none;
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
@@ -79,11 +79,11 @@
 }
 
 .main-menu__sandwich {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 23px;
-  right: 23px;
+  right: 20px;
   background: url("../../img/icon-mobile-menu.svg") no-repeat;
   cursor: pointer;
   border: none;

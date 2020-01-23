@@ -27,7 +27,10 @@
   padding: 29px 20px 26px;
   display: flex;
   justify-content: space-between;
-  background-color: $white;
+
+  &--white {
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 66px 71px 53px;
@@ -39,6 +42,7 @@
     top: 93px;
     left: 110px;
     padding: 66px 95px 53px 75px;
+    background-color: $white;
   }
 
   h3 {

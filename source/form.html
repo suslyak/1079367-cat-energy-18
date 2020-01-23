@@ -21,70 +21,92 @@
     </nav>
   </header>
   <main>
-    <h1 class="title">Подбор программы</h1>
     <section class="custom-course">
+      <h1 class="title">Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru" class="custom-course__form">
-        <p class="custom-course__form-info">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="custom-course__form-info">Заполните анкету и мы подберем <br>программу питания для вашего кота</p>
         <fieldset class="custom-course__personal">
-          <label for="name">Имя*:</label>
-          <input id="name" type="text" name="name" placeholder="барсик" required>
-
-          <label for="weight">Вес (кг):*</label>
-          <input id="weight" type="number" name="weight" placeholder="7" required>
-
-          <label for="age">Возраст (лет):</label>
-          <input id="age" type="number" name="age" placeholder="7">
+          <div class="custom-course__field">
+            <label for="name">Имя*:</label>
+            <input id="name" type="text" name="name" placeholder="барсик" required>
+          </div>
+          <div class="custom-course__field">
+            <label for="weight">Вес (кг):*</label>
+            <input id="weight" type="number" name="weight" placeholder="7" required>
+          </div>
+          <div class="custom-course__field">
+            <label for="age">Возраст (лет):</label>
+            <input id="age" type="number" name="age" placeholder="7">
+          </div>
         </fieldset>
-        <fieldset class="custom-course__effect">
-          <label for="losing-weight">Похудение</label>
-          <input id="losing-weight" type="radio" name="effect" value="losing-weight"  checked>
-
-          <label for="gain-weight">Набор массы</label>
-          <input id="gain-weight" type="radio" name="effect" value="gain-weight">
-
-          <label for="require-assistance">Не знаю (Нужен ваш совет)</label>
-          <input id="require-assistance" type="radio" name="effect" value="require-assistance">
+        <fieldset class="control-group custom-course__effect">
+          <div class="control-group__item radio">
+            <input id="losing-weight" class="radio__input" type="radio" name="effect" value="losing-weight"  checked>
+            <label for="losing-weight" class="radio__label">Похудение</label>
+          </div>
+          <div class="control-group__item radio">
+            <input id="gain-weight" class="radio__input" type="radio" name="effect" value="gain-weight">
+            <label for="gain-weight" class="radio__label">Набор массы</label>
+          </div>
+          <div class="control-group__item radio">
+            <input id="require-assistance" class="radio__input" type="radio" name="effect" value="require-assistance">
+            <label for="require-assistance" class="radio__label">Не знаю (Нужен ваш совет)</label>
+          </div>
         </fieldset>
-        <fieldset class="custom-course__contacts">
-          <legend>Контактные данные (владельца кота)</legend>
-          <label for="email">email*:</label>
-          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-
-          <label for="phone">Телефон:*</label>
-          <input id="phone" type="tel" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone"  placeholder="8 (960) 900-60-90" required>
-        </fieldset>
-        <fieldset class="custom-course__comment">
+        <div class="custom-course__contacts" role="group" aria-labelledby="contacts-fake-legend">
+          <div id="contacts-fake-legend" class="custom-course__fake-legend">
+            <span>Контактные данные<br>(владельца кота)</span>
+          </div>
+          <div class="custom-course__field custom-course__field--flex-child">
+            <label for="email">e-mail*:</label>
+            <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="custom-course__field custom-course__field--flex-child">
+            <label for="phone">Телефон:*</label>
+            <input id="phone" type="tel" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone"  placeholder="8 (960) 900-60-90" required>
+          </div>
+        </div>
+        <fieldset class="custom-course__fieldset">
           <legend>Комментарий</legend>
           <label  class="visually-hidden" for="comment">Вы можете добавть комментарий</label>
-          <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea name="comment" id="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="custom-course__up-sell">
-          <legend>Дополнительно</legend>
-          <label for="sweetener">Сахарозаменитель</label>
-          <input id="sweetener" name="up-sell" type="checkbox" value="sweetener" checked>
-
-          <label for="milk">Молоко</label>
-          <input id="milk" name="up-sell" value="milk" type="checkbox">
-
-          <label for="water">Питьевая вода</label>
-          <input id="water" name="up-sell" value="water" type="checkbox">
-
-          <label for="vitamins">Витамины</label>
-          <input id="vitamins" name="up-sell" value="vitamins" type="checkbox">
-        </fieldset>
-        <button class="button">Отправить заявку</button>
-        <small>* — Обязательные поля</small>
+        <div class="custom-course__up-sell" role="group" aria-labelledby="up-sell-fake-legend">
+          <div id="up-sell-fake-legend" class="custom-course__fake-legend">
+            <span>Дополнительно</span>
+          </div>
+          <div class="control-group__item control-group__item--short checkbox">
+            <input id="sweetener" class="checkbox__input" name="up-sell" type="checkbox" value="sweetener" checked>
+            <label for="sweetener" class="checkbox__label">Сахарозаменитель</label>
+          </div>
+          <div class="control-group__item control-group__item--short checkbox">
+            <input id="water" class="checkbox__input" name="up-sell" value="water" type="checkbox">
+            <label for="water" class="checkbox__label">Питьевая вода</label>
+          </div>
+          <div class="control-group__item control-group__item--short checkbox">
+            <input id="milk" class="checkbox__input" name="up-sell" value="milk" type="checkbox">
+            <label for="milk" class="checkbox__label">Молоко</label>
+          </div>
+          <div class="control-group__item control-group__item--short checkbox">
+            <input id="vitamins" class="checkbox__input" name="up-sell" value="vitamins" type="checkbox">
+            <label for="vitamins" class="checkbox__label">Витамины</label>
+          </div>
+          <button class="button">Отправить заявку</button>
+          <small>* — Обязательные поля</small>
+        </div>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <h2 class="visually-hidden">
-      Как нас найти
-    </h2>
-    <h3>Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
-    <p>
-      ул. Большая <br>Конюшенная,д. 19/8 <br>Санкт-Петербург
-    </p>
+    <div class="page-footer__contacts">
+      <h2 class="visually-hidden">
+        Как нас найти
+      </h2>
+      <h3>Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
+      <p>
+        ул. Большая <br>Конюшенная,д. 19/8 <br>Санкт-Петербург
+      </p>
+    </div>
     <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
     <div class="page-footer__container">
       <a href="index.html" class="footer-logo" aria-label="Лого «Кэт Энерджи»"></a>
