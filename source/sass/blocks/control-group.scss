@@ -60,6 +60,10 @@
         margin-right: 20px;
       }
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__input:checked ~ &__label::after {
@@ -117,6 +121,10 @@
         height: 40px;
         margin-right: 20px;
       }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
