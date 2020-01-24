@@ -1,0 +1,17 @@
+.arrow {
+  width: 24px;
+  height: 11px;
+  margin-left: 12px;
+  display: inline-block;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+
+  &:hover {
+    width: 36px;
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+}
+
+a:hover .arrow {
+  width: 33px;
+  background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+}

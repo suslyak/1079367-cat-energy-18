@@ -1,23 +1,23 @@
 .academy-logo {
-  font-size: 16px;
-  line-height: 1;
-  color: $tundora;
   width: calc(100% - 40px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1;
+  color: $tundora;
 
   @media (min-width: $tablet-width) {
     width: 25%;
+    margin-top: 0;
     justify-content: flex-end;
-
-    @include gutters(30px);
+    margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 25%;
-
-    @include gutters(40px);
+    margin-right: 40px;
   }
 }
 
@@ -29,10 +29,16 @@
 }
 
 .academy-logo__picture {
-  margin-left: 20px;
+  margin-left: 8px;
+  position: relative;
+  right: -7px;
+
+  svg {
+    fill: $grey--diabolic;
+  }
 
   &:hover {
-    path {
+    svg {
       fill: $green;
     }
   }
@@ -40,7 +46,7 @@
   &:active {
     opacity: 0.3;
 
-    path {
+    svg {
       fill: $green;
     }
   }

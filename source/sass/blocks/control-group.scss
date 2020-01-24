@@ -12,11 +12,27 @@
 
     &--short {
       @media (min-width: $tablet-width) {
-        width: 50%;
-        padding-right: 30px;
+        width: calc((100% - 60px) / 2);
+
+        &:nth-child(even) {
+          margin-right: 60px;
+        }
 
         &:not(:last-child) {
           margin-bottom: 30px;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        width: calc((100% - 240px) / 4);
+        margin-right: 80px;
+
+        &:nth-child(even) {
+          margin-right: 80px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
         }
       }
     }
