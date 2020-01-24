@@ -1,5 +1,6 @@
 .catalog {
   @include wrapper;
+  margin-bottom: 42px;
 
   @media (max-width: $max-mobile-width) {
     h1 {
@@ -9,15 +10,15 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 
     @include gutters(30px);
   }
 
   @media (min-width: $desktop-width) {
     width: 90%;
+    margin-bottom: 100px;
     padding-top: 20px;
-
 
     @include gutters(40px);
   }

@@ -4,10 +4,8 @@
   border-right: 1px solid $mercury-border;
   border-left: 1px solid $mercury-border;
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 
   @media (max-width: $max-mobile-width) {
     padding-top: 23px;
@@ -22,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc((100% - 60px) / 2);
+    align-items: center;
     padding-bottom: 40px;
     flex-direction: column;
     background-color: $concrete;
