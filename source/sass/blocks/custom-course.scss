@@ -11,8 +11,8 @@
     @media (min-width: $desktop-width) {
 
       margin-left: calc(5% + 40px);
-      @include gutters(0);
 
+      @include gutters(0);
     }
   }
 }
@@ -34,6 +34,7 @@
     font-size: 20px;
     line-height: 1;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
   }
@@ -177,6 +178,7 @@
   &--flex-child {
     @media (min-width: $desktop-width) {
       width: calc((100% - 80px) / 2);
+
       &:nth-child(even) {
         margin-right: 80px;
       }

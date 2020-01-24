@@ -13,7 +13,6 @@
   @media (min-width: $desktop-width) {
     margin-left: 40px;
     margin-right: calc(25% - 168px);
-
   }
 
   @include mouse-effects-opacity(0.8,0.6);
