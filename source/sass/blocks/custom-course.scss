@@ -8,7 +8,7 @@
       @include gutters(30px);
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
 
       margin-left: calc(5% + 40px);
       @include gutters(0);
@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  justify-content: flex-start;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -33,26 +34,34 @@
     font-size: 20px;
     line-height: 1;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
 
   button {
-    width: calc(100% - 40px);
+    width: 100%;
     align-self: center;
-    margin-top: 35px;
+    margin-top: 25px;
 
     @media (min-width: $tablet-width) {
-      width: 42%;
+      width: calc((100% - 60px) / 2);
       margin-top: 26px;
-      margin-right: 8%;
+      margin-right: 60px;
       font-size: 20px;
       line-height: 1;
       padding: 17px 26px 15px 26px;
       align-self: flex-start;
     }
+
+    @media (min-width: $desktop-width) {
+      width: calc((100% - 80px) / 2);
+      margin-right: 80px;
+    }
   }
 
   small {
     align-self: center;
-    margin-top: 23px;
+    margin: 23px auto 0 auto;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -60,6 +69,7 @@
     text-transform: none;
 
     @media (min-width: $tablet-width) {
+      margin: 23px 0 0;
       font-size: 16px;
       line-height: 1;
     }
@@ -95,6 +105,10 @@
       outline: none;
       border-color: $tundora;
     }
+
+    &:focus + svg {
+      fill: $green;
+    }
   }
 }
 
@@ -125,6 +139,7 @@
 
 .custom-course__field {
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -149,9 +164,23 @@
   input {
     flex-grow: 1;
     text-transform: uppercase;
-    padding: 14px 16px 12px;
+    padding: 14px 30px 12px 16px;
     background: transparent;
     border: 1px solid $mercury;
+  }
+
+  svg {
+    position: absolute;
+    right: 12px;
+  }
+
+  &--flex-child {
+    @media (min-width: $desktop-width) {
+      width: calc((100% - 80px) / 2);
+      &:nth-child(even) {
+        margin-right: 80px;
+      }
+    }
   }
 }
 
@@ -290,6 +319,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 15px;
   margin-bottom: 27px;
   border-top: 3px solid $green;
@@ -299,16 +329,17 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-    margin-top: 40px;
+    margin-top: 18px;
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     @include gutters(calc(5% + 40px));
-    margin-top: 40px;
-    margin-bottom: 65px;
+    margin-top: 12px;
+    margin-bottom: 45px;
   }
 }
+
 
 .custom-course__fake-legend {
   width: 100%;
@@ -330,7 +361,7 @@
 
   @media (min-width: $tablet-width) {
     left: -40px;
-    margin-bottom: 55px;
+    margin-bottom: 77px;
     font-size: 36px;
     line-height: 1;
 
@@ -341,6 +372,14 @@
       br {
         display: none;
       }
+    }
+  }
+
+  &--short-margin {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
     }
   }
 }
