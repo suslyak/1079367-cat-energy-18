@@ -110,6 +110,13 @@
     &:focus + svg {
       fill: $green;
     }
+
+    &:invalid {
+      border-color: $error;
+    }
+    &:invalid + svg {
+      fill: $error;
+    }
   }
 }
 
