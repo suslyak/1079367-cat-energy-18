@@ -114,6 +114,7 @@
     &:invalid {
       border-color: $error;
     }
+
     &:invalid + svg {
       fill: $error;
     }
@@ -191,6 +192,7 @@
       }
     }
   }
+
   &--error {
     input {
       border: 1px solid $error;

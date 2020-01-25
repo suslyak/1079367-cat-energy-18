@@ -10,10 +10,10 @@
   border-bottom: 1px solid $gray--darken;
 
   li {
-      &:not(:last-child) {
-        margin-right: 28px;
-      }
+    &:not(:last-child) {
+      margin-right: 28px;
     }
+  }
 
   @media (max-width: $max-mobile-width) {
     width: calc(100% - 40px);
