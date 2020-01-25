@@ -105,7 +105,7 @@
 
     &:focus {
       outline: none;
-      padding-top:13px;
+      padding-top: 13px;
       padding-bottom: 11px;
       border-width: 2px;
       border-color: $tundora;
@@ -116,7 +116,7 @@
     }
 
     &:invalid {
-      padding-top:13px;
+      padding-top: 13px;
       padding-bottom: 11px;
       border-width: 2px;
       border-color: $error;
@@ -202,7 +202,7 @@
 
   &--error {
     input {
-      padding-top:13px;
+      padding-top: 13px;
       padding-bottom: 11px;
       border: 2px solid $error;
     }
@@ -403,4 +403,3 @@
     }
   }
 }
-

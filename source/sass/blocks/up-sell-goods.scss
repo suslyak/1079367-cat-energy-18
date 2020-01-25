@@ -132,11 +132,12 @@
   color: $tundora;
 
   @media (min-width: $tablet-width) {
-    width:35%;
+    width: 35%;
     margin: 0 0 0 auto;
     font-size: 16px;
     line-height: 1.25;
   }
+
   @media (min-width: $desktop-width) {
     width: 32%;
   }
