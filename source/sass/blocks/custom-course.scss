@@ -88,7 +88,7 @@
     }
 
     &:hover {
-      border-color: $grey--border;
+      border-color: $gray--border;
     }
 
     &:focus {
@@ -99,7 +99,7 @@
 
   input {
     &:hover {
-      border-color: $grey--border;
+      border-color: $gray--border;
     }
 
     &:focus {
@@ -181,6 +181,15 @@
 
       &:nth-child(even) {
         margin-right: 80px;
+      }
+    }
+  }
+  &--error {
+    input {
+      border: 1px solid $error;
+
+      & + svg {
+        fill: $error;
       }
     }
   }

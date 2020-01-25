@@ -6,8 +6,8 @@
   justify-content: center;
   padding: 23px 83px 17px 74px;
   margin-top: 30px;
-  border-top: 1px solid $grey--darken;
-  border-bottom: 1px solid $grey--darken;
+  border-top: 1px solid $gray--darken;
+  border-bottom: 1px solid $gray--darken;
 
   li {
       &:not(:last-child) {
@@ -35,7 +35,7 @@
   display: inline-block;
 
   svg {
-    fill: $grey--diabolic;
+    fill: $gray--diabolic;
   }
 
   &:hover {
