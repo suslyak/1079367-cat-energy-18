@@ -4,11 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
+  <div class="visually-hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a href="index.html" class="logo" aria-label="Лого «Кэт Энерджи»"></a>
     <nav class="main-menu main-menu--no-js">
@@ -61,14 +68,14 @@
             <label for="email">e-mail*:</label>
             <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             <svg width="23" height="13">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
+              <use xlink:href="#icon-mail"></use>
             </svg>
           </div>
           <div class="custom-course__field custom-course__field--flex-child">
             <label for="phone">Телефон:*</label>
             <input id="phone" type="tel" pattern="[0-9]{1} \([0-9]{3}\) ([0-9]{3})-([0-9]{2})-([0-9]{2})" name="phone"  placeholder="8 (960) 900-60-90" required>
             <svg width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
+              <use xlink:href="#icon-phone"></use>
             </svg>
           </div>
         </div>
@@ -120,21 +127,21 @@
         <li>
           <a href="" class="social-links__icon social-links__icon--vk" arial-label="«Кэт Энерджи» во «В контакте»">
             <svg width="22" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="" class="social-links__icon social-links__icon--insta" arial-label="«Кэт Энерджи» в Инстаграм">
             <svg width="16" height="17">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li>
           <a href="" class="social-links__icon social-links__icon--fb" arial-label="«Кэт Энерджи» в Фейсбук">
             <svg width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -145,7 +152,7 @@
         </a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo__picture">
           <svg width="42" height="53">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

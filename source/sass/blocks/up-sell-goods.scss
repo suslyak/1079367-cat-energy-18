@@ -47,7 +47,8 @@
     }
   }
 
-  button {
+  button,
+  a[role="button"] {
     width: 100%;
 
     @media (min-width: $tablet-width) {

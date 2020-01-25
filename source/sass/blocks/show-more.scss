@@ -42,7 +42,8 @@
     }
   }
 
-  button {
+  button,
+  a[role="button"] {
     width: 100%;
   }
 

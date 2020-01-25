@@ -9,7 +9,6 @@
 node_modules/
 source/preview/
 npm-debug.*
-source/css/*.css
-source/css/*.map
+build/
 Thumbs.db
 source/sass/outlines.scss
