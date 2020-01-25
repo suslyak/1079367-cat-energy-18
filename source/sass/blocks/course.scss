@@ -17,6 +17,10 @@
     background-color: $green;
     border-radius: 50px;
 
+    @media (max-width: $max-mobile-width) {
+      left: 20px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;

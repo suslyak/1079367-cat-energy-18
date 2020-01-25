@@ -25,10 +25,10 @@
 
       @media (min-width: $desktop-width) {
         width: calc((100% - 240px) / 4);
-        margin-right: 80px;
+        margin-right: 79px;
 
         &:nth-child(even) {
-          margin-right: 80px;
+          margin-right: 79px;
         }
 
         &:last-of-type {
