@@ -3,16 +3,21 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 23px 83px 17px 74px;
   margin-top: 30px;
-  border-top: 1px solid $grey--darken;
-  border-bottom: 1px solid $grey--darken;
+  border-top: 1px solid $gray--darken;
+  border-bottom: 1px solid $gray--darken;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
 
   @media (max-width: $max-mobile-width) {
     width: calc(100% - 40px);
   }
-
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -23,13 +28,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 0 20px;
-    justify-content: center;
-
-    li {
-      &:not(:last-child) {
-        margin-right: 28px;
-      }
-    }
   }
 }
 
@@ -37,7 +35,7 @@
   display: inline-block;
 
   svg {
-    fill: $grey--diabolic;
+    fill: $gray--diabolic;
   }
 
   &:hover {

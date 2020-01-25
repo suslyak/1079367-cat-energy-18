@@ -4,20 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
+  <div class="visually-hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a href="index.html" class="logo" aria-label="Лого «Кэт Энерджи»"></a>
-    <nav class="main-menu">
+    <nav class="main-menu main-menu--no-js">
       <ul>
         <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
         <li class="main-menu__item"><a class="main-menu__link" >Каталог продукции</a></li>
         <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
       </ul>
-      <button class="main-menu__sandwich" aria-label="открыть или закрыть меню"></button>
+      <button class="main-menu__sandwich main-menu__sandwich--no-js" aria-label="открыть или закрыть меню"></button>
     </nav>
   </header>
   <main>
@@ -29,7 +36,7 @@
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -40,20 +47,16 @@
                 srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x"
-                type="image/webp">
-                <source
-                srcset="img/chicken-small-mobile@1x.jpg 1x, img/chicken-small-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <source srcset="img/chicken-small-mobile@1x.jpg 1x, img/chicken-small-mobile@2x.jpg 2x">
                 <img
                 src="img/chicken-small-desktop@1x.png"
                 srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c курицей 500г">
               </picture>
             </a>
           </div>
@@ -74,14 +77,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -92,20 +95,16 @@
                 srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x"
-                type="image/webp">
-                <source
-                srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <source srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.jpg 2x">
                 <img
                 src="img/chicken-big-desktop@1x.png"
                 srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c курицей 1000г">
               </picture>
             </a>
           </div>
@@ -126,14 +125,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -144,20 +143,17 @@
                 srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x"
-                type="image/webp">
+                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
                 <source
-                srcset="img/fish-small-mobile@1x.jpg 1x, img/fish-small-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/fish-small-mobile@1x.jpg 1x, img/fish-small-mobile@2x.jpg 2x">
                 <img
                 src="img/fish-small-desktop@1x.png"
                 srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c рыбой 500г">
               </picture>
             </a>
           </div>
@@ -178,14 +174,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -196,20 +192,17 @@
                 srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x"
-                type="image/webp">
+                srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
                 <source
-                srcset="img/fish-big-mobile@1x.jpg 1x, img/fish-big-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/fish-big-mobile@1x.jpg 1x, img/fish-big-mobile@2x.jpg 2x">
                 <img
                 src="img/fish-big-desktop@1x.png"
                 srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c рыбой 1000г">
               </picture>
             </a>
           </div>
@@ -230,14 +223,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -248,20 +241,17 @@
                 srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x"
-                type="image/webp">
+                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
                 <source
-                srcset="img/buckwheat-small-mobile@1x.jpg 1x, img/buckwheat-small-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/buckwheat-small-mobile@1x.jpg 1x, img/buckwheat-small-mobile@2x.jpg 2x">
                 <img
                 src="img/buckwheat-small-desktop@1x.png"
                 srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c гречкой 500г">
               </picture>
             </a>
           </div>
@@ -282,14 +272,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -300,20 +290,17 @@
                 srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x"
-                type="image/webp">
+                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
                 <source
-                srcset="img/buckwheat-big-mobile@1x.jpg 1x, img/buckwheat-big-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/buckwheat-big-mobile@1x.jpg 1x, img/buckwheat-big-mobile@2x.jpg 2x">
                 <img
                 src="img/buckwheat-big-desktop@1x.png"
                 srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c гречкой 1000г">
               </picture>
             </a>
           </div>
@@ -334,14 +321,14 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="product">
           <div class="product__picture">
             <a href="#">
               <picture>
                 <source
-                media="(min-width: 1440px)"
+                media="(min-width: 1300px)"
                 srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x"
                 type="image/webp">
                 <source
@@ -352,20 +339,17 @@
                 srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x"
                 type="image/webp">
                 <source
-                media="(min-width: 1440px)"
-                srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x"
-                type="image/webp">
+                media="(min-width: 1300px)"
+                srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                 <source
                 media="(min-width: 768px)"
-                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x"
-                type="image/webp">
+                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
                 <source
-                srcset="img/rice-small-mobile@1x.jpg 1x, img/rice-small-mobile@2x.jpg 2x"
-                type="image/webp">
+                srcset="img/rice-small-mobile@1x.jpg 1x, img/rice-small-mobile@2x.jpg 2x">
                 <img
-                src="img/rice-small-desktop@1x.png 1x"
+                src="img/rice-small-desktop@1x.png"
                 srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x"
-                alt="питание для котов">
+                alt="Cat Energy PRO c рисом 500г">
               </picture>
             </a>
           </div>
@@ -386,12 +370,12 @@
               </tr>
             </table>
           </div>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="show-more">
           <p>Показать еще 100500 товаров</p>
           <span class="show-more__subtext">На самом деле вкусов гораздо больше!</span>
-          <button class="button button--gray show-all">Показать все</button>
+          <a role="button" href="#" class="button button--gray show-all">Показать все</a>
         </li>
       </ul>
     </section>
@@ -414,7 +398,7 @@
               </td>
             </tr>
           </table>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="up-sell-goods__position">
           <a href="#" class="up-sell-goods__title">
@@ -430,7 +414,7 @@
               </td>
             </tr>
           </table>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="up-sell-goods__position">
           <a href="#" class="up-sell-goods__title">
@@ -446,7 +430,7 @@
               </td>
             </tr>
           </table>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
         <li class="up-sell-goods__position">
           <a href="#" class="up-sell-goods__title">
@@ -462,7 +446,7 @@
               </td>
             </tr>
           </table>
-          <button class="button make-requisition">Заказать</button>
+          <a role="button" href="#" class="button make-requisition">Заказать</a>
         </li>
       </ul>
       <div class="bonus">
@@ -482,28 +466,28 @@
         ул. Большая <br>Конюшенная,д. 19/8 <br>Санкт-Петербург
       </p>
     </div>
-    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
+    <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="320" height="400" allowfullscreen=""></iframe>
     <div class="page-footer__container">
       <a href="index.html" class="footer-logo" aria-label="Лого «Кэт Энерджи»"></a>
       <ul class="social-links">
         <li>
-          <a href="" class="social-links__icon social-links__icon--vk" arial-label="«Кэт Энерджи» во «В контакте»">
+          <a href="" class="social-links__icon social-links__icon--vk" aria-label="«Кэт Энерджи» во «В контакте»">
             <svg width="22" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="" class="social-links__icon social-links__icon--insta" arial-label="«Кэт Энерджи» в Инстаграм">
+          <a href="" class="social-links__icon social-links__icon--insta" aria-label="«Кэт Энерджи» в Инстаграм">
             <svg width="16" height="17">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="" class="social-links__icon social-links__icon--fb" arial-label="«Кэт Энерджи» в Фейсбук">
+          <a href="" class="social-links__icon social-links__icon--fb" aria-label="«Кэт Энерджи» в Фейсбук">
             <svg width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -514,11 +498,12 @@
         </a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo__picture">
           <svg width="42" height="53">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/scrpts.min.js"></script>
 </body>
 </html>

@@ -88,27 +88,42 @@
     }
 
     &:hover {
-      border-color: $grey--border;
+      border-color: $gray--border;
     }
 
     &:focus {
       outline: none;
+      border-width: 2px;
       border-color: $tundora;
     }
   }
 
   input {
     &:hover {
-      border-color: $grey--border;
+      border-color: $gray--border;
     }
 
     &:focus {
       outline: none;
+      padding-top: 13px;
+      padding-bottom: 11px;
+      border-width: 2px;
       border-color: $tundora;
     }
 
     &:focus + svg {
       fill: $green;
+    }
+
+    &:invalid {
+      padding-top: 13px;
+      padding-bottom: 11px;
+      border-width: 2px;
+      border-color: $error;
+    }
+
+    &:invalid + svg {
+      fill: $error;
     }
   }
 }
@@ -184,6 +199,18 @@
       }
     }
   }
+
+  &--error {
+    input {
+      padding-top: 13px;
+      padding-bottom: 11px;
+      border: 2px solid $error;
+    }
+
+    input + svg {
+      fill: $error;
+    }
+  }
 }
 
 .custom-course__personal {
@@ -246,40 +273,6 @@
     width: 100%;
 
     @include gutters(calc(5% + 40px));
-
-    &__field {
-      width: calc(90% / 2 - 80px);
-      margin-right: 80px;
-
-      &:nth-child(even) {
-        margin-left: calc(5% + 40px);
-      }
-    }
-  }
-
-  legend {
-    font-size: 24px;
-    line-height: 1;
-    text-transform: none;
-    position: relative;
-    margin-bottom: 35px;
-    padding-left: 20px;
-    top: -3px;
-    left: -21px;
-    background: $white;
-    box-sizing: content-box;
-
-    @media (min-width: $tablet-width) {
-      left: -40px;
-      margin-bottom: 78px;
-      padding-left: 40px;
-      font-size: 36px;
-      line-height: 1;
-
-      br {
-        display: none;
-      }
-    }
   }
 
   h3 {
@@ -370,10 +363,10 @@
     span {
       padding-left: 37px;
       padding-right: 44px;
+    }
 
-      br {
-        display: none;
-      }
+    br {
+      display: none;
     }
   }
 
@@ -382,6 +375,31 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
+    }
+  }
+}
+
+.custom-course__legend {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  top: -3px;
+  left: -21px;
+  background: $white;
+  box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    left: -40px;
+    margin-bottom: 78px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 1;
+
+    br {
+      display: none;
     }
   }
 }

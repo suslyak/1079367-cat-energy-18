@@ -27,7 +27,9 @@
       linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background:
+        url("../../img/index-background-desktop@2x.jpg") no-repeat 100% 0 / contain,
+        linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
     }
   }
 }

@@ -134,6 +134,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  overflow: hidden;
   background-color: $concrete;
   z-index: 0;
 
@@ -218,7 +219,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px dotted $grey--border;
+    border-bottom: 1px dotted $gray--border;
     cursor: pointer;
     padding: 0;
 
@@ -228,7 +229,7 @@
     }
 
     &:hover {
-      border-bottom: 1px solid $grey--border;
+      border-bottom: 1px solid $gray--border;
     }
 
     &:active {
@@ -252,13 +253,13 @@
   border-radius: 7px;
   padding: 3px 6px;
   background-color: $white;
-  border: 1px solid $grey--border;
+  border: 1px solid $gray--border;
 
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
     position: relative;
-    background-color: $grey--darken;
+    background-color: $gray--darken;
     border: none;
   }
 }
@@ -277,7 +278,7 @@
     top: -14px;
     left: calc(50% - 14px);
     border-radius: 50%;
-    border: 1px solid $grey--darken;
+    border: 1px solid $gray--darken;
     background: radial-gradient(circle, $green 4px, $white 0);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;

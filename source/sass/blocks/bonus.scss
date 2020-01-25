@@ -37,6 +37,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    right: calc(5% + 40px);
+    top: 90px;
     width: 245px;
     min-height: 289px;
     flex-direction: column;

@@ -1,5 +1,6 @@
 .up-sell-goods {
   display: flex;
+  position: relative;
   flex-direction: column;
   border-top: 3px solid $green;
 
@@ -47,7 +48,8 @@
     }
   }
 
-  button {
+  button,
+  a[role="button"] {
     width: 100%;
 
     @media (min-width: $tablet-width) {
@@ -76,17 +78,17 @@
 
 .up-sell-goods__position {
   padding: 14px 0 18px;
-  border-top: 1px solid $grey--border;
+  border-top: 1px solid $gray--border;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding: 27px 38px;
-    border-left: 1px solid $grey--border;
-    border-right: 1px solid $grey--border;
+    border-left: 1px solid $gray--border;
+    border-right: 1px solid $gray--border;
 
     &:last-child {
-      border-bottom: 1px solid $grey--border;
+      border-bottom: 1px solid $gray--border;
     }
   }
 
@@ -130,10 +132,14 @@
   color: $tundora;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: 35%;
     margin: 0 0 0 auto;
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
   }
 }
 

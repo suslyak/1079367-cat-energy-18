@@ -4,28 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
-  <!--<svg style="display:none;">
-    <symbol id="right-arrow-long" viewBox="0 0 32 11">
-        <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4" fill="currentColor" />
-    </symbol>
-    <symbol id="right-arrow-verylong" viewBox="0 0 32 11">
-       <polygon class="right-arrow-verylong" points="25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4" fill="currentColor" />
-    </symbol>
-  </svg>-->
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a href="index.html" class="logo" aria-label="Лого «Кэт Энерджи»"></a>
-    <nav class="main-menu">
+    <nav class="main-menu main-menu--no-js">
       <ul>
         <li class="main-menu__item"><a class="main-menu__link main-menu__link--whitening">Главная</a></li>
         <li class="main-menu__item"><a class="main-menu__link main-menu__link--whitening" href="catalog.html">Каталог продукции</a></li>
         <li class="main-menu__item"><a class="main-menu__link main-menu__link--whitening" href="form.html">Подбор программы</a></li>
       </ul>
-      <button class="main-menu__sandwich" aria-label="открыть или закрыть меню"></button>
+      <button class="main-menu__sandwich main-menu__sandwich--no-js" aria-label="открыть или закрыть меню"></button>
     </nav>
   </header>
   <main>
@@ -39,32 +38,13 @@
           Занялся собой? Займись котом!
         </span>
         <picture>
-          <source
-          media="(min-width: 1440px)"
-          srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x"
-          type="image/webp">
-          <source
-          media="(min-width: 768px)"
-          srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x"
-          type="image/webp">
-          <source
-          srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x"
-          type="image/webp">
-          <source
-          media="(min-width: 1440px)"
-          srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"
-          type="image/webp">
-          <source
-          media="(min-width: 768px)"
-          srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x"
-          type="image/webp">
-          <source
-          srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x"
-          type="image/webp">
-          <img class="promo__image"
-          src="img/index-can-desktop@1x.png"
-          srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"
-          alt="питание для котов">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x" type="image/webp">
+          <source srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <source srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x">
+          <img class="promo__image" src="img/index-can-desktop@1x.png" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" alt="питание для котов">
         </picture>
         <a href="form.html" class="button button--smaller">Подобрать программу</a>
       </div>
@@ -77,8 +57,8 @@
           <p>
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="" class="course__link">Каталог Slim
-            <span class="arrow"></span>
+          <a href="catalog.html" class="arrowed-link">Каталог Slim
+            <span class="arrowed-link__arrow"></span>
           </a>
         </li>
         <li class="course course--power-cat">
@@ -86,8 +66,8 @@
           <p>
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="" class="course__link">Каталог pro
-            <span class="arrow"></span>
+          <a href="catalog.html" class="arrowed-link">Каталог pro
+            <span class="arrowed-link__arrow"></span>
           </a>
         </li>
       </ul>
@@ -135,62 +115,24 @@
         <div class="example__pictures">
           <div class="example__from-picture">
             <picture>
-              <source
-              media="(min-width: 1440px)"
-              srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 768px)"
-              srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
-              type="image/webp">
-              <source
-              srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 1440px)"
-              srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 768px)"
-              srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x"
-              type="image/webp">
-              <source
-              srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x"
-              type="image/webp">
-              <img
-              src="img/before-desktop@1x.png"
-              srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x"
-              alt="кот был таким">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <source srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
+              <img src="img/before-desktop@1x.png" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" alt="кот был таким">
             </picture>
           </div>
           <div class="example__to-picture">
             <picture>
-              <source
-              media="(min-width: 1440px)"
-              srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 768px)"
-              srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
-              type="image/webp">
-              <source
-              srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 1440px)"
-              srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x"
-              type="image/webp">
-              <source
-              media="(min-width: 768px)"
-              srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"
-              type="image/webp">
-              <source
-              srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x"
-              type="image/webp">
-              <img
-              src="img/after-desktop@1x.png"
-              srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x"
-              alt="кот стал таким">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <source srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
+              <img src="img/after-desktop@1x.png" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" alt="кот стал таким">
             </picture>
           </div>
           <div class="example__controls">
@@ -214,28 +156,28 @@
         ул. Большая <br>Конюшенная,д. 19/8 <br>Санкт-Петербург
       </p>
     </div>
-    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
+    <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578865812739!5m2!1sru!2sru" width="320" height="400" allowfullscreen=""></iframe>
     <div class="page-footer__container">
       <a href="index.html" class="footer-logo" aria-label="Лого «Кэт Энерджи»"></a>
       <ul class="social-links">
         <li>
-          <a href="" class="social-links__icon social-links__icon--vk" arial-label="«Кэт Энерджи» во «В контакте»">
+          <a href="" class="social-links__icon social-links__icon--vk" aria-label="«Кэт Энерджи» во «В контакте»">
             <svg width="22" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="" class="social-links__icon social-links__icon--insta" arial-label="«Кэт Энерджи» в Инстаграм">
+          <a href="" class="social-links__icon social-links__icon--insta" aria-label="«Кэт Энерджи» в Инстаграм">
             <svg width="16" height="17">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="" class="social-links__icon social-links__icon--fb" arial-label="«Кэт Энерджи» в Фейсбук">
+          <a href="" class="social-links__icon social-links__icon--fb" aria-label="«Кэт Энерджи» в Фейсбук">
             <svg width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -246,11 +188,12 @@
         </a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-logo__picture">
           <svg width="42" height="53">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/scrpts.min.js"></script>
 </body>
 </html>

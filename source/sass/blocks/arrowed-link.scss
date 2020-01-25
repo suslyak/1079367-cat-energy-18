@@ -1,0 +1,38 @@
+.arrowed-link {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    order: 4;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .arrowed-link__arrow {
+    width: 36px;
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+}
+
+.arrowed-link__arrow {
+  width: 24px;
+  height: 11px;
+  margin-left: 12px;
+  display: inline-block;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+
+  &:hover {
+    width: 36px;
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+}
