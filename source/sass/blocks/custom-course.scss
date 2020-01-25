@@ -199,10 +199,10 @@
   &--error {
     input {
       border: 2px solid $error;
+    }
 
-      & + svg {
-        fill: $error;
-      }
+    input + svg {
+      fill: $error;
     }
   }
 }
@@ -267,40 +267,6 @@
     width: 100%;
 
     @include gutters(calc(5% + 40px));
-
-    &__field {
-      width: calc(90% / 2 - 80px);
-      margin-right: 80px;
-
-      &:nth-child(even) {
-        margin-left: calc(5% + 40px);
-      }
-    }
-  }
-
-  legend {
-    font-size: 24px;
-    line-height: 1;
-    text-transform: none;
-    position: relative;
-    margin-bottom: 35px;
-    padding-left: 20px;
-    top: -3px;
-    left: -21px;
-    background: $white;
-    box-sizing: content-box;
-
-    @media (min-width: $tablet-width) {
-      left: -40px;
-      margin-bottom: 78px;
-      padding-left: 40px;
-      font-size: 36px;
-      line-height: 1;
-
-      br {
-        display: none;
-      }
-    }
   }
 
   h3 {
@@ -391,10 +357,10 @@
     span {
       padding-left: 37px;
       padding-right: 44px;
+    }
 
-      br {
-        display: none;
-      }
+    br {
+      display: none;
     }
   }
 
@@ -406,3 +372,29 @@
     }
   }
 }
+
+.custom-course__legend {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  top: -3px;
+  left: -21px;
+  background: $white;
+  box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    left: -40px;
+    margin-bottom: 78px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 1;
+
+    br {
+      display: none;
+    }
+  }
+}
+
