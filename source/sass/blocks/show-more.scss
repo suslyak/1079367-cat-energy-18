@@ -45,12 +45,13 @@
   button,
   a[role="button"] {
     width: 100%;
+    margin-top: auto;
   }
 
   @media (min-width: $tablet-width) {
     width: calc((100% - 60px) / 2);
-    padding-top: 52px;
-    padding-bottom: 40px;
+    padding-top: 55px;
+    padding-bottom: 38px;
     margin-top: 140px;
 
     @include gutters(37px);

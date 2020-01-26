@@ -81,6 +81,12 @@
     }
   }
 
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    &:nth-child(odd) {
+      margin: 0 78px 0 0;
+    }
+  }
+
   p {
     padding: 9px 0 5px 0;
 

@@ -23,14 +23,26 @@
     min-height: 696px;
     margin-bottom: 84px;
     background:
-      url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0 / contain,
+      url("../../img/index-background-desktop@1x.jpg") no-repeat calc(50% + 360px) 0 / contain,
       linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
 
     @media (min-resolution: $retina-dppx) {
       background:
+        url("../../img/index-background-desktop@2x.jpg") no-repeat calc(50% + 360px) 0 / contain,
+        linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
+
+      @media (min-width: 1440px) {
+        background:
         url("../../img/index-background-desktop@2x.jpg") no-repeat 100% 0 / contain,
         linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
+      }
     }
+  }
+
+  @media (min-width: 1440px) {
+    background:
+    url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0 / contain,
+    linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
   }
 }
 
@@ -56,8 +68,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 90%;
+    min-width: 1300px;
     padding-top: 187px;
-    margin-bottom: 0;
+    margin-bottom: 0 auto;
+    align-items: flex-start;
   }
 }
 
@@ -90,9 +105,8 @@
 
   @media (min-width: $desktop-width) {
     width: 45%;
-
     @include gutters(40px);
-    margin-left: 10.3%;
+    margin: 35px 0 40px 80px;
   }
 }
 
@@ -124,9 +138,8 @@
 
   @media (min-width: $desktop-width) {
     width: 45%;
-
+    margin: 0 80px 0;
     @include gutters(40px);
-    margin-left: 10.3%;
   }
 }
 
@@ -154,7 +167,7 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    left: 38.8%;
+    left: 37.8%;
     top: 142px;
     margin: 0;
   }

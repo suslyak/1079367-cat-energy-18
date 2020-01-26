@@ -24,16 +24,17 @@
 
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 90%;
+    min-width: 1300px;
+
+    @include wrapper;
+    @include gutters(40px);
     padding-top: 0;
-    padding-left: calc(5% + 40px);
-    padding-right: calc(5% + 40px);
     flex-direction: row;
     background:
       linear-gradient(to bottom, $white 0, $white 192px, transparent 192px),
       linear-gradient(to right, $concrete 0, $concrete 60%, $concrete-gallery 60%),
       $concrete;
-
 
     h2 {
       margin-top: 57px;
@@ -43,6 +44,12 @@
       margin-top: 124px;
       margin-bottom: 57px;
     }
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    padding-left: calc(5% + 40px);
+    padding-right: calc(5% + 40px);
   }
 }
 
@@ -185,7 +192,7 @@
     }
 
     span {
-      margin-left: 55px;
+      margin-left: 65px;
     }
   }
 }

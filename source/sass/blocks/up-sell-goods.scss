@@ -1,51 +1,18 @@
 .up-sell-goods {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  border-top: 3px solid $green;
+  width:  100%;
 
-  @include gutters(20px);
+  @include clear-ul;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    @include gutters(30px);
-    margin-bottom: 40px;
+      margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 87px;
-
-    @include gutters(calc(5% + 40px));
-  }
-
-  h2 {
-    display: inline-block;
-    align-self: flex-start;
-    position: relative;
-    margin-top: -19px;
-    margin-bottom: 35px;
-    left: -21px;
-    padding-left: 20px;
-    padding-right: 23px;
-    background: $white;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 1;
-
-    @media (min-width: $tablet-width) {
-      left: -2px;
-      margin-top: -26px;
-      margin-bottom: 80px;
-      font-size: 36px;
-      line-height: 1;
-      padding-left: 40px;
-      padding-right: 35px;
-    }
-
-    @media (min-width: $tablet-width) {
-      left: -40px;
-    }
+    width: calc(100% - 80px - (100% - 240px) / 4);
+    margin-right: 79px;
+    margin-bottom: 86px;
   }
 
   button,
@@ -62,17 +29,6 @@
       margin-top: 0;
       flex-shrink: 0;
     }
-  }
-}
-
-.up-sell-goods__catalog {
-  @include clear-ul;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    width: calc(100% - 80px - (100% - 240px) / 4);
-    margin-right: 79px;
   }
 }
 
@@ -132,7 +88,7 @@
   color: $tundora;
 
   @media (min-width: $tablet-width) {
-    width: 35%;
+    width: 40%;
     margin: 0 0 0 auto;
     font-size: 16px;
     line-height: 1.25;
@@ -150,17 +106,17 @@
 
   @media (min-width: $tablet-width) {
     &:nth-child(1) {
-      width: 63%;
+      width: 62%;
       text-align: right;
     }
 
     &:nth-child(2) {
-      width: 37%;
+      width: 38%;
       text-align: right;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &:nth-child(1) {
       text-align: left;
     }

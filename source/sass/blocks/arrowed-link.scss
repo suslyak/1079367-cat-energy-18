@@ -35,4 +35,8 @@
     width: 36px;
     background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }
