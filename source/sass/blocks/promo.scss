@@ -3,12 +3,12 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat 50% 0 / contain $green--lighten;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0 / contain $green--lighten;
   min-height: 305px;
   margin-bottom: 196px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -23,17 +23,17 @@
     min-height: 696px;
     margin-bottom: 84px;
     background:
-      url("../../img/index-background-desktop@1x.jpg") no-repeat calc(50% + 360px) 0 / contain,
+      url("../img/index-background-desktop@1x.jpg") no-repeat calc(50% + 360px) 0 / contain,
       linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
 
     @media (min-resolution: $retina-dppx) {
       background:
-        url("../../img/index-background-desktop@2x.jpg") no-repeat calc(50% + 360px) 0 / contain,
+        url("../img/index-background-desktop@2x.jpg") no-repeat calc(50% + 360px) 0 / contain,
         linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
 
       @media (min-width: 1440px) {
         background:
-        url("../../img/index-background-desktop@2x.jpg") no-repeat 100% 0 / contain,
+        url("../img/index-background-desktop@2x.jpg") no-repeat 100% 0 / contain,
         linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
       }
     }
@@ -41,7 +41,7 @@
 
   @media (min-width: 1440px) {
     background:
-    url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0 / contain,
+    url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0 / contain,
     linear-gradient(to right, $white 0, $white 50%, $green--lighten 50%, $green--lighten 100%);
   }
 }

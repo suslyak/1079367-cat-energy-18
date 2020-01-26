@@ -20,7 +20,7 @@
 
   &:hover .arrowed-link__arrow {
     width: 36px;
-    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   }
 }
 
@@ -29,11 +29,11 @@
   height: 11px;
   margin-left: 12px;
   display: inline-block;
-  background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
 
   &:hover {
     width: 36px;
-    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   }
 
   @media (min-width: $tablet-width) {

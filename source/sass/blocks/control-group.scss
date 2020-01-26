@@ -99,7 +99,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__label::after {
-  content: url("../../img/icon-tick.svg");
+  content: url("../img/icon-tick.svg");
   width: 21px;
   height: 16px;
   position: absolute;
