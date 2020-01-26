@@ -79,11 +79,11 @@
     &:nth-child(odd) {
       margin: 0 80px 0 0;
     }
-  }
 
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    &:nth-child(odd) {
-      margin: 0 78px 0 0;
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      &:nth-child(odd) {
+        margin: 0 78px 0 0;
+      }
     }
   }
 
