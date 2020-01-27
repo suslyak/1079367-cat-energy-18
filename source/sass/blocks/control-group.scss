@@ -13,6 +13,7 @@
     }
   }
 }
+
 .control-group__item {
   display: flex;
   align-items: flex-start;
@@ -65,7 +66,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:focus + label:before {
+  &:focus + label::before {
     border: 2px solid $green;
   }
 
@@ -131,7 +132,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:focus + label:before {
+  &:focus + label::before {
     border: 2px solid $green;
     border-radius: 50%;
   }
@@ -190,4 +191,3 @@
     height: 18px;
   }
 }
-

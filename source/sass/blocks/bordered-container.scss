@@ -21,7 +21,6 @@
   flex-direction: column;
 
   @include gutters(20px);
-
   @include wrapper;
 
   @media (min-width: $tablet-width) {
@@ -39,14 +38,11 @@
   }
 
   &--short-gutters {
-
     @media (min-width: $tablet-width) {
-
       @include gutters(30px);
     }
 
     @media (min-width: $desktop-width) {
-
       @include gutters(40px);
     }
   }
@@ -62,7 +58,7 @@
   padding-right: 24px;
   margin-top: -0.65em;
   margin-bottom: 33px;
-  background: #fff;
+  background: $white;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
@@ -94,7 +90,6 @@
   }
 
   &--short-gutters {
-
     @media (min-width: $tablet-width) {
       left: 0;
     }
@@ -155,7 +150,6 @@
   }
 
   &--col-2 {
-
     @media (min-width: $desktop-width) {
       width: calc((100% - 80px) / 2);
 

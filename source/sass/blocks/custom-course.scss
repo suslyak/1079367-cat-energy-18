@@ -98,7 +98,6 @@
       height: 175px;
       align-self: center;
       padding: 13px 18px;
-      height: 175px;
     }
 
     @media (min-width: $tablet-width) {
@@ -162,14 +161,8 @@
     }
   }
 
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
   input[type="number"] {
-    -moz-appearance: textfield;
+    appearance: textfield;
   }
 }
 
@@ -192,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+
     @include gutters(0);
   }
 }
@@ -246,7 +240,6 @@
   }
 
   &--col-2 {
-
     @media (min-width: $desktop-width) {
       width: calc((100% - 80px) / 2);
 
@@ -305,6 +298,7 @@
   @media (min-width: $desktop-width) {
     width: calc((100% - 80px) / 2);
     margin-right: 80px;
+
     @include gutters(0);
 
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
