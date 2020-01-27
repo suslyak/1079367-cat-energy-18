@@ -19,7 +19,10 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 90%;
+      min-width: 1300px;
 
+      @include wrapper;
       @include gutters(40px);
     }
   }
@@ -158,6 +161,16 @@
       fill: $error;
     }
   }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
 
 .custom-course__form-info {
@@ -196,6 +209,10 @@
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 21px;
+
+      @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+        margin-bottom: 18px;
+      }
     }
   }
 
@@ -224,7 +241,7 @@
     right: 12px;
 
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-      bottom: 12px;
+      bottom: 16px;
     }
   }
 
@@ -239,6 +256,10 @@
 
       &:nth-child(even) {
         margin-right: 80px;
+
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+          margin-right: 79px;
+        }
       }
     }
   }
@@ -249,6 +270,10 @@
 
       &:nth-child(even) {
         margin-right: 80px;
+
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+          margin-right: 79px;
+        }
       }
     }
   }

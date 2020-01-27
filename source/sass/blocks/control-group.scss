@@ -68,6 +68,10 @@
   &:focus + label:before {
     border: 2px solid $green;
   }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__label {
@@ -131,6 +135,10 @@
     border: 2px solid $green;
     border-radius: 50%;
   }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .radio__label {
@@ -182,3 +190,4 @@
     height: 18px;
   }
 }
+
