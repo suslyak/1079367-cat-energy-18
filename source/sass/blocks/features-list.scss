@@ -46,40 +46,40 @@
 
   &--leaf {
     &::before {
-      background-image: url("../../img/advantage-leaf@1x.png");
+      background-image: url("../img/advantage-leaf@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/advantage-leaf@2x.png");
+        background-image: url("../img/advantage-leaf@2x.png");
       }
     }
   }
 
   &--powder {
     &::before {
-      background-image: url("../../img/advantage-powder@1x.png");
+      background-image: url("../img/advantage-powder@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/advantage-powder@2x.png");
+        background-image: url("../img/advantage-powder@2x.png");
       }
     }
   }
 
   &--meal {
     &::before {
-      background-image: url("../../img/advantage-dining@1x.png");
+      background-image: url("../img/advantage-dining@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/advantage-dining@2x.png");
+        background-image: url("../img/advantage-dining@2x.png");
       }
     }
   }
 
   &--alarmclock {
     &::before {
-      background-image: url("../../img/advantage-clock@1x.png");
+      background-image: url("../img/advantage-clock@1x.png");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/advantage-clock@2x.png");
+        background-image: url("../img/advantage-clock@2x.png");
       }
     }
   }
@@ -128,10 +128,18 @@
     width: calc((100% - 240px) / 4);
 
     &:nth-child(odd) {
-      margin-right: 79px;
+      margin-right: 80px;
     }
 
-    margin: 0 79px 0 0;
+    margin: 0 80px 0 0;
+
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      &:nth-child(odd) {
+        margin-right: 79px;
+      }
+
+      margin: 0 79px 0 0;
+    }
 
     &:last-child {
       margin-right: 0;

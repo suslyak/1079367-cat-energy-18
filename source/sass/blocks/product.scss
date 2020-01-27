@@ -38,10 +38,18 @@
 
   @media (min-width: $desktop-width) {
     width: calc((100% - 240px) / 4);
-    margin-right: 79px;
+    margin-right: 80px;
 
     &:nth-child(2n+1) {
+      margin-right: 80px;
+    }
+
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
       margin-right: 79px;
+
+      &:nth-child(2n+1) {
+        margin-right: 79px;
+      }
     }
 
     &:nth-child(4n) {
@@ -86,7 +94,7 @@
     a {
       width: 100%;
       position: absolute;
-      bottom: 30px;
+      bottom: 37px;
     }
   }
 

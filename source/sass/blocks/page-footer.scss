@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 90%;
+    min-width: 1300px;
   }
 }
 
@@ -43,9 +44,13 @@
     position: absolute;
     width: 570px;
     top: 93px;
-    left: 110px;
+    left: 40px;
     padding: 66px 95px 53px 75px;
     background-color: $white;
+  }
+
+  @media (min-width: 1440px) {
+    left: calc(5% + 40px);
   }
 
   h3 {
@@ -85,6 +90,25 @@
 }
 
 .page-footer__map {
+  overflow: hidden;
+}
+
+.page-footer__map,
+.page-footer__frame-map {
   width: 100%;
+  height: 360px;
+  position: relative;
   border: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.page-footer__no-js-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

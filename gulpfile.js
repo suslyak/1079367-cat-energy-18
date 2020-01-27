@@ -115,13 +115,14 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", gulp.series(
-  "clean",
-  "images",
-  "js",
-  "copy",
-  "css",
-  "sprite",
-  "html"
-));
+    "clean",
+    "images",
+    "webp",
+    "js",
+    "copy",
+    "css",
+    "sprite",
+    "html"
+))
 
 gulp.task("start", gulp.series("build", "server"));

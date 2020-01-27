@@ -1,3 +1,19 @@
+.control-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--col-2 {
+    @media (min-width: $desktop-width) {
+      width: calc((100% - 80px) / 2);
+    }
+  }
+}
+
 .control-group__item {
   display: flex;
   align-items: flex-start;
@@ -13,7 +29,7 @@
     @media (min-width: $tablet-width) {
       width: calc((100% - 60px) / 2);
 
-      &:nth-child(even) {
+      &:nth-child(odd) {
         margin-right: 60px;
       }
 
@@ -26,7 +42,7 @@
       width: calc((100% - 240px) / 4);
       margin-right: 79px;
 
-      &:nth-child(even) {
+      &:nth-child(odd) {
         margin-right: 79px;
       }
 
@@ -49,6 +65,14 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + label::before {
+    border: 2px solid $green;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__label {
@@ -80,7 +104,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__label::after {
-  content: url("../../img/icon-tick.svg");
+  content: url("../img/icon-tick.svg");
   width: 21px;
   height: 16px;
   position: absolute;
@@ -107,6 +131,15 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + label::before {
+    border: 2px solid $green;
+    border-radius: 50%;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .radio__label {
